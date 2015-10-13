@@ -263,6 +263,7 @@
             this.Minimized_SimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.Button_SplitterControl = new System.Windows.Forms.Splitter();
             this.Button_PanelControl = new DevExpress.XtraEditors.PanelControl();
+            this.doubleadvance_SimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.image_ComboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
             this.SimpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.Next_SimpleButton = new DevExpress.XtraEditors.SimpleButton();
@@ -282,7 +283,6 @@
             this.caption_picturebox = new System.Windows.Forms.PictureBox();
             this.Check_imageList = new System.Windows.Forms.ImageList(this.components);
             this.GetPic_Timer = new System.Windows.Forms.Timer(this.components);
-            this.doubleadvance_SimpleButton = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.Report_GroupControl)).BeginInit();
             this.Report_GroupControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Center_panelControl)).BeginInit();
@@ -3211,6 +3211,18 @@
             this.Button_PanelControl.TabIndex = 1;
             this.Button_PanelControl.Text = "PanelControl3";
             // 
+            // doubleadvance_SimpleButton
+            // 
+            this.doubleadvance_SimpleButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.doubleadvance_SimpleButton.Location = new System.Drawing.Point(435, 9);
+            this.doubleadvance_SimpleButton.LookAndFeel.SkinName = "Lilian";
+            this.doubleadvance_SimpleButton.Name = "doubleadvance_SimpleButton";
+            this.doubleadvance_SimpleButton.Size = new System.Drawing.Size(60, 27);
+            this.doubleadvance_SimpleButton.TabIndex = 29;
+            this.doubleadvance_SimpleButton.Text = "审 核";
+            this.doubleadvance_SimpleButton.Visible = false;
+            this.doubleadvance_SimpleButton.Click += new System.EventHandler(this.doubleadvance_SimpleButton_Click);
+            // 
             // image_ComboBoxEdit
             // 
             this.image_ComboBoxEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -3450,17 +3462,6 @@
             this.GetPic_Timer.Enabled = true;
             this.GetPic_Timer.Interval = 1000;
             this.GetPic_Timer.Tick += new System.EventHandler(this.GetPic_Timer_Tick);
-            // 
-            // doubleadvance_SimpleButton
-            // 
-            this.doubleadvance_SimpleButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.doubleadvance_SimpleButton.Location = new System.Drawing.Point(435, 9);
-            this.doubleadvance_SimpleButton.LookAndFeel.SkinName = "Lilian";
-            this.doubleadvance_SimpleButton.Name = "doubleadvance_SimpleButton";
-            this.doubleadvance_SimpleButton.Size = new System.Drawing.Size(60, 27);
-            this.doubleadvance_SimpleButton.TabIndex = 29;
-            this.doubleadvance_SimpleButton.Text = "审 核";
-            this.doubleadvance_SimpleButton.Visible = false;
             // 
             // Report_Form
             // 
