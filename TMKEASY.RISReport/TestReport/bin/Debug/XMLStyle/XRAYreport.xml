@@ -1,0 +1,830 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XTextDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" EditorVersionString="1.2015.6.26">
+   <Attributes />
+   <XElements>
+      <Element xsi:type="XTextBody">
+         <Attributes />
+         <Expressions />
+         <ScriptItems />
+         <XElements>
+            <Element xsi:type="XTextTable" NumOfRows="1" NumOfColumns="3">
+               <Attributes />
+               <ID>table4</ID>
+               <Expressions />
+               <ScriptItems />
+               <XElements>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <Expressions />
+                     <ScriptItems />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="0" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="7">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="9">
+                                 <Text>医院名称</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="9" />
+                              <Element xsi:type="XString" StyleIndex="6">
+                                 <Text>放射检查报告单</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="0" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="7">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="0" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                     <SpecifyHeight>216</SpecifyHeight>
+                  </Element>
+               </XElements>
+               <CompressOwnerLineSpacing>true</CompressOwnerLineSpacing>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>555.535</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>1006.7829</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>456.682068</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="HorizontalLine" StyleIndex="1">
+               <Attributes />
+               <ID>hl1</ID>
+               <ScriptItems />
+            </Element>
+            <Element xsi:type="XString">
+               <Text>姓名：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="10">
+               <Attributes />
+               <ID>name</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>patregister</DataSource>
+                  <BindingPath>name</BindingPath>
+               </ValueBinding>
+               <VisibleExpression />
+               <ValueExpression />
+               <Expressions />
+               <ScriptItems />
+               <XElements />
+               <Deleteable>false</Deleteable>
+               <BorderElementColor />
+               <RuntimeBackgroundTextColor />
+               <SpecifyWidth>236.220474</SpecifyWidth>
+               <EventExpressions />
+               <Name>name</Name>
+               <InnerValue />
+               <ToolTip>name</ToolTip>
+               <BackgroundText>姓名</BackgroundText>
+               <EnableHighlight>Disabled</EnableHighlight>
+               <EnableFieldTextColor>false</EnableFieldTextColor>
+            </Element>
+            <Element xsi:type="XString">
+               <Text>     性别：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="1">
+               <Attributes />
+               <ID>patientsex</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>patregister</DataSource>
+                  <BindingPath>Sex</BindingPath>
+               </ValueBinding>
+               <VisibleExpression />
+               <ValueExpression />
+               <Expressions />
+               <ScriptItems />
+               <XElements />
+               <Deleteable>false</Deleteable>
+               <BorderElementColor />
+               <RuntimeBackgroundTextColor />
+               <SpecifyWidth>94.48819</SpecifyWidth>
+               <EventExpressions />
+               <Name>patientsex</Name>
+               <InnerValue />
+               <ToolTip>性别</ToolTip>
+               <BackgroundText>性别</BackgroundText>
+               <EnableHighlight>Disabled</EnableHighlight>
+               <EnableFieldTextColor>false</EnableFieldTextColor>
+               <FieldSettings>
+                  <EditStyle>DropdownList</EditStyle>
+                  <ListSource>
+                     <SourceName>sexlist</SourceName>
+                     <DisplayPath />
+                     <ValuePath />
+                     <Items />
+                  </ListSource>
+                  <ListValueFormatString />
+               </FieldSettings>
+            </Element>
+            <Element xsi:type="XString">
+               <Text> 	年龄：</Text>
+            </Element>
+            <Element xsi:type="XInputField">
+               <Attributes />
+               <ID>age</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>patregister</DataSource>
+                  <BindingPath>age</BindingPath>
+               </ValueBinding>
+               <VisibleExpression />
+               <ValueExpression />
+               <Expressions />
+               <ScriptItems />
+               <XElements />
+               <Deleteable>false</Deleteable>
+               <BorderElementColor />
+               <RuntimeBackgroundTextColor />
+               <SpecifyWidth>165.354324</SpecifyWidth>
+               <EventExpressions />
+               <Name>age</Name>
+               <InnerValue />
+               <ToolTip>age</ToolTip>
+               <BackgroundText>年龄</BackgroundText>
+               <EnableHighlight>Disabled</EnableHighlight>
+               <EnableFieldTextColor>false</EnableFieldTextColor>
+            </Element>
+            <Element xsi:type="XString">
+               <Text>  	          X线号：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="2">
+               <Attributes />
+               <ID>field11</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>patexam</DataSource>
+                  <BindingPath>xno</BindingPath>
+               </ValueBinding>
+               <VisibleExpression />
+               <ValueExpression />
+               <Expressions />
+               <ScriptItems />
+               <XElements />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <BorderElementColor />
+               <RuntimeBackgroundTextColor />
+               <EventExpressions />
+               <Name>xno</Name>
+               <InnerValue />
+               <ToolTip>检查号</ToolTip>
+               <BackgroundText>检查号</BackgroundText>
+               <EnableHighlight>Disabled</EnableHighlight>
+               <EnableFieldTextColor>false</EnableFieldTextColor>
+               <FieldSettings />
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="2" />
+            <Element xsi:type="XString">
+               <Text>申请科室：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="2">
+               <Attributes />
+               <ID>field12</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>patexam</DataSource>
+                  <BindingPath>sqdep</BindingPath>
+               </ValueBinding>
+               <VisibleExpression />
+               <ValueExpression />
+               <Expressions />
+               <ScriptItems />
+               <XElements />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <BorderElementColor />
+               <RuntimeBackgroundTextColor />
+               <SpecifyWidth>-236.220474</SpecifyWidth>
+               <EventExpressions />
+               <UserEditable>false</UserEditable>
+               <Name>sqdep</Name>
+               <InnerValue />
+               <ToolTip>申请科室</ToolTip>
+               <BackgroundText>申请科室</BackgroundText>
+               <EnableHighlight>Disabled</EnableHighlight>
+               <FieldSettings>
+                  <EditStyle>DropdownList</EditStyle>
+                  <ListSource>
+                     <SourceName>sqdeplist</SourceName>
+                     <DisplayPath>listname</DisplayPath>
+                     <ValuePath>listcode</ValuePath>
+                     <Items />
+                  </ListSource>
+               </FieldSettings>
+            </Element>
+            <Element xsi:type="XString">
+               <Text> 床号：</Text>
+            </Element>
+            <Element xsi:type="XInputField">
+               <Attributes />
+               <ID>bedno</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>patexam</DataSource>
+                  <BindingPath>bedno</BindingPath>
+               </ValueBinding>
+               <VisibleExpression />
+               <ValueExpression />
+               <Expressions />
+               <ScriptItems />
+               <XElements />
+               <Deleteable>false</Deleteable>
+               <BorderElementColor />
+               <RuntimeBackgroundTextColor />
+               <SpecifyWidth>141.732285</SpecifyWidth>
+               <EventExpressions />
+               <Name>bedno</Name>
+               <InnerValue />
+               <ToolTip>bedno</ToolTip>
+               <EnableHighlight>Disabled</EnableHighlight>
+               <SelectedIndex>5</SelectedIndex>
+               <FieldSettings>
+                  <ListSource>
+                     <SourceName>machinetypelist</SourceName>
+                     <DisplayPath />
+                     <ValuePath />
+                     <Items />
+                  </ListSource>
+                  <ListValueFormatString />
+               </FieldSettings>
+            </Element>
+            <Element xsi:type="XString">
+               <Text>门诊住院号：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="2">
+               <Attributes />
+               <ID>field13</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>patregister</DataSource>
+                  <BindingPath>inpatient_id</BindingPath>
+               </ValueBinding>
+               <VisibleExpression />
+               <ValueExpression />
+               <Expressions />
+               <ScriptItems />
+               <XElements />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <BorderElementColor />
+               <RuntimeBackgroundTextColor />
+               <SpecifyWidth>336.614166</SpecifyWidth>
+               <EventExpressions />
+               <Name>inpatient_id</Name>
+               <InnerValue />
+               <ToolTip>门诊住院号</ToolTip>
+               <BackgroundText>门诊住院号</BackgroundText>
+               <EnableHighlight>Disabled</EnableHighlight>
+               <FieldSettings />
+            </Element>
+            <Element xsi:type="XString">
+               <Text>检查日期：</Text>
+            </Element>
+            <Element xsi:type="XInputField">
+               <Attributes />
+               <ID>modcheckdate</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>patexam</DataSource>
+                  <BindingPath>modcheckdate</BindingPath>
+               </ValueBinding>
+               <VisibleExpression />
+               <ValueExpression />
+               <Expressions />
+               <ScriptItems />
+               <XElements />
+               <Deleteable>false</Deleteable>
+               <BorderElementColor />
+               <RuntimeBackgroundTextColor />
+               <SpecifyWidth>295.2756</SpecifyWidth>
+               <EventExpressions />
+               <UserEditable>false</UserEditable>
+               <Name>modcheckdate</Name>
+               <DisplayFormat>
+                  <Style>DateTime</Style>
+                  <Format>yyyy-MM-dd</Format>
+               </DisplayFormat>
+               <InnerValue />
+               <ToolTip>modcheckdate</ToolTip>
+               <BackgroundText>检查日期</BackgroundText>
+               <EnableHighlight>Disabled</EnableHighlight>
+               <EnableFieldTextColor>false</EnableFieldTextColor>
+               <FieldSettings>
+                  <EditStyle>DateTime</EditStyle>
+               </FieldSettings>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="2" />
+            <Element xsi:type="HorizontalLine" StyleIndex="1">
+               <Attributes />
+               <ID>hl2</ID>
+               <ScriptItems />
+            </Element>
+            <Element xsi:type="XString">
+               <Text>检查部位：</Text>
+            </Element>
+            <Element xsi:type="XInputField">
+               <Attributes />
+               <ID>checkpos</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>patexam</DataSource>
+                  <BindingPath>checkpos</BindingPath>
+               </ValueBinding>
+               <VisibleExpression />
+               <ValueExpression />
+               <Expressions />
+               <ScriptItems />
+               <XElements />
+               <BorderElementColor />
+               <RuntimeBackgroundTextColor />
+               <SpecifyWidth>1653.54333</SpecifyWidth>
+               <EventExpressions />
+               <Name>checkpos</Name>
+               <InnerValue />
+               <EnableHighlight>Disabled</EnableHighlight>
+               <EnableFieldTextColor>false</EnableFieldTextColor>
+               <FieldSettings>
+                  <EditStyle>DropdownList</EditStyle>
+                  <ListSource>
+                     <SourceName>checkposlist</SourceName>
+                     <DisplayPath />
+                     <ValuePath />
+                     <Items />
+                  </ListSource>
+                  <ListValueFormatString />
+               </FieldSettings>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="2" />
+            <Element xsi:type="XString">
+               <Text>诊断描述：</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="2" />
+            <Element xsi:type="XTextTable" NumOfRows="1" NumOfColumns="1">
+               <Attributes />
+               <ID>reportinfotable</ID>
+               <Expressions />
+               <ScriptItems />
+               <XElements>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <ID />
+                     <Expressions />
+                     <ScriptItems />
+                     <EventTemplateName />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                     <SpecifyHeight>466.385834</SpecifyHeight>
+                  </Element>
+               </XElements>
+               <Deleteable>false</Deleteable>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>2012.75</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XString">
+               <Text>诊断提示：</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" />
+            <Element xsi:type="XTextTable" NumOfRows="1" NumOfColumns="1">
+               <Attributes />
+               <ID>reportendtable</ID>
+               <Expressions />
+               <ScriptItems />
+               <XElements>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <ID />
+                     <Expressions />
+                     <ScriptItems />
+                     <EventTemplateName />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                     <SpecifyHeight>201.2756</SpecifyHeight>
+                  </Element>
+               </XElements>
+               <Deleteable>false</Deleteable>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>2012.75</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XTextTable" NumOfRows="1" NumOfColumns="6">
+               <Attributes />
+               <ID>table001</ID>
+               <Expressions />
+               <ScriptItems />
+               <XElements>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <Expressions />
+                     <ScriptItems />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="3">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>报告医生：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="3">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField">
+                                 <Attributes />
+                                 <ID>reportdoc</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <AutoHideMode>HideWhenChildFieldEmpty</AutoHideMode>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>reportdoc</BindingPath>
+                                 </ValueBinding>
+                                 <VisibleExpression />
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <Deleteable>false</Deleteable>
+                                 <BorderElementColor />
+                                 <RuntimeBackgroundTextColor />
+                                 <SpecifyWidth>295.2756</SpecifyWidth>
+                                 <EventExpressions />
+                                 <Name>reportdoc</Name>
+                                 <InnerValue />
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                                 <EnableFieldTextColor>false</EnableFieldTextColor>
+                                 <FieldSettings>
+                                    <EditStyle>DropdownList</EditStyle>
+                                    <ListSource>
+                                       <SourceName>reportdoclist</SourceName>
+                                       <DisplayPath />
+                                       <ValuePath />
+                                       <Items />
+                                    </ListSource>
+                                    <ListValueFormatString />
+                                 </FieldSettings>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="4" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="3">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>审核医生：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="3">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField">
+                                 <Attributes />
+                                 <ID>advancedoc</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>advancedoc</BindingPath>
+                                 </ValueBinding>
+                                 <VisibleExpression />
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <Deleteable>false</Deleteable>
+                                 <BorderElementColor />
+                                 <RuntimeBackgroundTextColor />
+                                 <SpecifyWidth>295.2756</SpecifyWidth>
+                                 <EventExpressions />
+                                 <Name>advancedoc</Name>
+                                 <InnerValue />
+                                 <BackgroundText>审核医生</BackgroundText>
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                                 <EnableFieldTextColor>false</EnableFieldTextColor>
+                                 <EditorActiveMode>None</EditorActiveMode>
+                                 <SelectedIndex>4</SelectedIndex>
+                                 <FieldSettings>
+                                    <EditStyle>DropdownList</EditStyle>
+                                    <ListSource>
+                                       <SourceName>advancedoclist</SourceName>
+                                       <DisplayPath />
+                                       <ValuePath />
+                                       <Items />
+                                    </ListSource>
+                                    <ListValueFormatString />
+                                 </FieldSettings>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="3">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>报告时间：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="3">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField">
+                                 <Attributes />
+                                 <ID>reportdate</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>reportdate</BindingPath>
+                                 </ValueBinding>
+                                 <VisibleExpression />
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <Deleteable>false</Deleteable>
+                                 <BorderElementColor />
+                                 <RuntimeBackgroundTextColor />
+                                 <SpecifyWidth>413.385834</SpecifyWidth>
+                                 <EventExpressions />
+                                 <UserEditable>false</UserEditable>
+                                 <Name>reportdate</Name>
+                                 <DisplayFormat>
+                                    <Style>DateTime</Style>
+                                    <Format>yyyy-MM-dd</Format>
+                                 </DisplayFormat>
+                                 <InnerValue />
+                                 <BackgroundText>报告日期</BackgroundText>
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                                 <EnableFieldTextColor>false</EnableFieldTextColor>
+                                 <EditorActiveMode>None</EditorActiveMode>
+                                 <FieldSettings>
+                                    <EditStyle>DateTime</EditStyle>
+                                 </FieldSettings>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Deleteable>false</Deleteable>
+               <CellBorderVisibility>Hidden</CellBorderVisibility>
+               <CellBackgroundVisibility>Hidden</CellBackgroundVisibility>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>281.458374</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>377.458374</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>274.729126</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>344.729248</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>275.458252</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>508.916748</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="HorizontalLine" StyleIndex="1">
+               <Attributes />
+               <ID>hl2</ID>
+               <ScriptItems />
+            </Element>
+            <Element xsi:type="XString">
+               <Text>注意：报告医生签字或盖章后有效。本报告供临床参考，请勿作其他用途。</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" />
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextHeader">
+         <Attributes />
+         <Expressions />
+         <ScriptItems />
+         <XElements>
+            <Element xsi:type="XParagraphFlag" StyleIndex="0" />
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextFooter">
+         <Attributes />
+         <Expressions />
+         <ScriptItems />
+         <XElements>
+            <Element xsi:type="XParagraphFlag" />
+         </XElements>
+      </Element>
+   </XElements>
+   <FileName>E:\Keasy\SoftwareCode\Module\TMKEASY.RISReport\TestReport\bin\Debug\XMLStyle\XRAYreport.xml</FileName>
+   <FileFormat>XML</FileFormat>
+   <RepeatedImages />
+   <Info>
+      <LicenseText>温州卡易网络技术有限公司:KayiSoft</LicenseText>
+      <CreationTime>2014-06-25T16:30:09.5152039+08:00</CreationTime>
+      <LastModifiedTime>2015-09-04T16:18:15.6296847+08:00</LastModifiedTime>
+      <LastPrintTime>1980-01-01T00:00:00</LastPrintTime>
+      <Operator>DCSoft.Writer Version:1.2014.1217.1</Operator>
+      <NumOfPage>1</NumOfPage>
+   </Info>
+   <BodyText>  医院名称
+放射检查报告单   姓名：     性别： 	年龄：  	          X线号：
+申请科室： 床号：门诊住院号：检查日期：
+检查部位：
+诊断描述：
+  诊断提示：
+  报告医生：   审核医生：   报告时间：   注意：报告医生签字或盖章后有效。本报告供临床参考，请勿作其他用途。</BodyText>
+   <Comments />
+   <LocalConfig />
+   <PageSettings>
+      <PageIndexsForHideHeaderFooter />
+      <PrinterName />
+      <PaperSource />
+      <PaperKind>A5</PaperKind>
+      <HeaderDistance>0</HeaderDistance>
+      <FooterDistance>0</FooterDistance>
+      <PaperWidth>583</PaperWidth>
+      <PaperHeight>827</PaperHeight>
+      <LeftMargin>77</LeftMargin>
+      <TopMargin>0</TopMargin>
+      <RightMargin>77</RightMargin>
+      <BottomMargin>0</BottomMargin>
+      <Landscape>true</Landscape>
+   </PageSettings>
+   <ContentStyles>
+      <Default xsi:type="DocumentContentStyle">
+         <FontName>宋体</FontName>
+         <FontSize>12</FontSize>
+      </Default>
+      <Styles>
+         <Style Index="0">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="1">
+            <Color>Blue</Color>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+         </Style>
+         <Style Index="2">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+         </Style>
+         <Style Index="3">
+            <BackgroundColor>White</BackgroundColor>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <VerticalAlign>Middle</VerticalAlign>
+            <BorderLeftColor>White</BorderLeftColor>
+            <BorderTopColor>White</BorderTopColor>
+            <BorderRightColor>White</BorderRightColor>
+            <BorderBottomColor>White</BorderBottomColor>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="4">
+            <FontName>宋体</FontName>
+            <FontSize>10.5</FontSize>
+         </Style>
+         <Style Index="5">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeftColor>White</BorderLeftColor>
+            <BorderTopColor>White</BorderTopColor>
+            <BorderRightColor>White</BorderRightColor>
+            <BorderBottomColor>White</BorderBottomColor>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingRight>15</PaddingRight>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="6">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Bold>true</Bold>
+         </Style>
+         <Style Index="7">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <VerticalAlign>Middle</VerticalAlign>
+            <BorderLeftColor>White</BorderLeftColor>
+            <BorderTopColor>White</BorderTopColor>
+            <BorderRightColor>White</BorderRightColor>
+            <BorderBottomColor>White</BorderBottomColor>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingRight>15</PaddingRight>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="8">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeftColor>White</BorderLeftColor>
+            <BorderTopColor>White</BorderTopColor>
+            <BorderRightColor>White</BorderRightColor>
+            <BorderBottomColor>White</BorderBottomColor>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="9">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Bold>true</Bold>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="10">
+            <Color>234, 22, 30</Color>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+         </Style>
+      </Styles>
+   </ContentStyles>
+   <UserHistories />
+</XTextDocument>

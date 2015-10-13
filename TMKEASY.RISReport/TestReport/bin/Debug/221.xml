@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XTextDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" EditorVersionString="1.2015.6.26">
+   <Attributes />
+   <XElements>
+      <Element xsi:type="XTextBody">
+         <Attributes />
+         <XElements>
+            <Element xsi:type="XString">
+               <Text>fwerwesdwedsdwerefdvdfgfgf</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" />
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextHeader">
+         <Attributes />
+         <XElements>
+            <Element xsi:type="XParagraphFlag" StyleIndex="0" />
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextFooter">
+         <Attributes />
+         <XElements>
+            <Element xsi:type="XParagraphFlag" />
+         </XElements>
+      </Element>
+   </XElements>
+   <FileName>E:\Keasy\SoftwareCode\Module\TMKEASY.RISReport\TestReport\bin\Debug\221.xml</FileName>
+   <FileFormat>XML</FileFormat>
+   <RepeatedImages />
+   <Info>
+      <LicenseText>温州卡易网络技术有限公司:KayiSoft</LicenseText>
+      <CreationTime>1980-01-01T00:00:00</CreationTime>
+      <LastModifiedTime>2015-07-17T10:12:07.4134519+08:00</LastModifiedTime>
+      <LastPrintTime>1980-01-01T00:00:00</LastPrintTime>
+      <Operator>DCSoft.Writer Version:1.2015.6.26</Operator>
+      <NumOfPage>1</NumOfPage>
+   </Info>
+   <BodyText>fwerwesdwedsdwerefdvdfgfgf</BodyText>
+   <Comments />
+   <LocalConfig />
+   <PageSettings />
+   <ContentStyles>
+      <Default xsi:type="DocumentContentStyle">
+         <FontName>宋体</FontName>
+         <FontSize>12</FontSize>
+      </Default>
+      <Styles>
+         <Style Index="0">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Center</Align>
+         </Style>
+      </Styles>
+   </ContentStyles>
+   <UserHistories />
+</XTextDocument>

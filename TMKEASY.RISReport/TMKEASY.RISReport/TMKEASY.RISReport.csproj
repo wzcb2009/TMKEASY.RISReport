@@ -1,0 +1,276 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47B06082-53B7-4D9D-A040-4DE544243D3B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TMKEASY.RISReport</RootNamespace>
+    <AssemblyName>TMKEASY.RISReport</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DCSoft.Writer, Version=1.2015.6.26, Culture=neutral, PublicKeyToken=2e40e961ea876340, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v6.2, Version=6.2.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v6.2, Version=6.2.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v6.2, Version=6.2.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v6.2, Version=6.2.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v6.2, Version=6.2.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v6.2, Version=6.2.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HISText, Version=1.0.4119.34797, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Ime, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="KY.BarCode128, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="KY.Database, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="KY.Flog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="KY.KeyCode, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="KY.Log, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="KY.PacsPictureModule, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="KY.RisSetup, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="KY.Setup_Log, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="KY.ShowErr, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="RIS.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="RIS.DrawTools, Version=2.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="RIS.Vedio, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TMEASY.Setup_Dict, Version=1.0.1.2, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="TMKEASY.OracleSetup, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TMKEASY.DLL\TMKEASY.OracleSetup.dll</HintPath>
+    </Reference>
+    <Reference Include="TMKEASY.QualityControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="TMKEASY.Table, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\ApplyImage_Class.cs" />
+    <Compile Include="Class\Bitmap_Class.cs" />
+    <Compile Include="Class\CONSULT_DIAG_Class.cs" />
+    <Compile Include="Class\ES_Bitmap_Class.cs" />
+    <Compile Include="Class\EventArgs_Class.cs" />
+    <Compile Include="Class\flog_Class.cs" />
+    <Compile Include="Class\FTPSETUP_Class.cs" />
+    <Compile Include="Class\ICD_10_Class.cs" />
+    <Compile Include="Class\MyListItemsProvider_Class.cs" />
+    <Compile Include="Class\patexam_Class.cs">
+    </Compile>
+    <Compile Include="Class\patregister_Class.cs" />
+    <Compile Include="Class\ReportXml_Class.cs" />
+    <Compile Include="Class\report_rewrite_Class.cs" />
+    <Compile Include="Class\report_template_Class.cs" />
+    <Compile Include="Class\RISOracle_Class.cs" />
+    <Compile Include="Class\RisSetup_Class.cs" />
+    <Compile Include="Class\setup_noSort_Dmb_Class.cs" />
+    <Compile Include="Class\setup_registerpart_Dmb_Class.cs" />
+    <Compile Include="Class\setup_REPORT_TEMPLATE_ORDER_Class.cs" />
+    <Compile Include="Class\Share_Class.cs" />
+    <Compile Include="Class\template_Class.cs" />
+    <Compile Include="Class\Userinfo_Class.cs" />
+    <Compile Include="Controls\report_history_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\report_history_Control.Designer.cs">
+      <DependentUpon>report_history_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Template_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Template_Control.Designer.cs">
+      <DependentUpon>Template_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BaseReport_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseReport_Form.Designer.cs">
+      <DependentUpon>BaseReport_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseReport_Class.cs" />
+    <Compile Include="Forms\Consult_request_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Consult_request_form.Designer.cs">
+      <DependentUpon>Consult_request_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportStyle_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportStyle_Form.Designer.cs">
+      <DependentUpon>ReportStyle_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report_Layout_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report_Layout_Form.Designer.cs">
+      <DependentUpon>Report_Layout_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\report_rewrite_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\report_rewrite_form.Designer.cs">
+      <DependentUpon>report_rewrite_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report_RIS_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report_RIS_Form.Designer.cs">
+      <DependentUpon>Report_RIS_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report_Word_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report_Word_Form.Designer.cs">
+      <DependentUpon>Report_Word_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Select_Printer_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Select_Printer_Form.Designer.cs">
+      <DependentUpon>Select_Printer_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SendMessage_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SendMessage_Form.Designer.cs">
+      <DependentUpon>SendMessage_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowApplyImage_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowApplyImage_Form.Designer.cs">
+      <DependentUpon>ShowApplyImage_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowApply_Form_old.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowApply_Form_old.Designer.cs">
+      <DependentUpon>ShowApply_Form_old.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowErr_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowErr_Form.Designer.cs">
+      <DependentUpon>ShowErr_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\template_Word_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\template_Word_form.Designer.cs">
+      <DependentUpon>template_Word_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\Report_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report_Form.Designer.cs">
+      <DependentUpon>Report_Form.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\report_history_Control.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>report_history_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Template_Control.resx">
+      <DependentUpon>Template_Control.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseReport_Form.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BaseReport_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Consult_request_form.resx">
+      <DependentUpon>Consult_request_form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportStyle_Form.resx">
+      <DependentUpon>ReportStyle_Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report_Layout_Form.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Report_Layout_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\report_rewrite_form.resx">
+      <DependentUpon>report_rewrite_form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report_RIS_Form.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Report_RIS_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report_Word_Form.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Report_Word_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Select_Printer_Form.resx">
+      <DependentUpon>Select_Printer_Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SendMessage_Form.resx">
+      <DependentUpon>SendMessage_Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShowApplyImage_Form.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ShowApplyImage_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShowApply_Form_old.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ShowApply_Form_old.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\template_Word_form.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>template_Word_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Forms\Report_Form.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Report_Form.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

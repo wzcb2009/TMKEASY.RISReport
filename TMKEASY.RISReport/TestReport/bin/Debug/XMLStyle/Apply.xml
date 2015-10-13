@@ -1,0 +1,1387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XTextDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" EditorVersionString="1.2014.1217.1">
+   <Attributes />
+   <XElements>
+      <Element xsi:type="XTextBody" StyleIndex="0">
+         <Attributes />
+         <Expressions />
+         <ScriptItems />
+         <XElements>
+            <Element xsi:type="XString" StyleIndex="14">
+               <Text>检查申请单</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="15" />
+            <Element xsi:type="XTextTable" NumOfRows="9" NumOfColumns="9">
+               <Attributes />
+               <ID>table</ID>
+               <Expressions />
+               <ScriptItems />
+               <XElements>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <Expressions />
+                     <ScriptItems />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="9">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>病人ID号：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="1">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="9">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>Patient_ID</ID>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>Patient_ID</BindingPath>
+                                    <Readonly>false</Readonly>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>Patient_ID</Name>
+                                 <InnerValue />
+                                 <ToolTip>Patient_ID</ToolTip>
+                                 <BackgroundText>病人ID号</BackgroundText>
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="2" />
+                           </XElements>
+                           <ColSpan>3</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="1">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="9">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>检查号：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="3" />
+                           </XElements>
+                           <ColSpan>3</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="1">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="1">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="9">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>xno</ID>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>xno</BindingPath>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>xno</Name>
+                                 <InnerValue />
+                                 <ToolTip>xno</ToolTip>
+                                 <BackgroundText>检查号</BackgroundText>
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <Expressions />
+                     <ScriptItems />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>姓    名：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>name</ID>
+                                 <ValueBinding>
+                                    <DataSource>patregister</DataSource>
+                                    <BindingPath>name</BindingPath>
+                                    <Readonly>false</Readonly>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>name</Name>
+                                 <InnerValue />
+                                 <ToolTip>name</ToolTip>
+                                 <BackgroundText>姓名</BackgroundText>
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>性别：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>sex</ID>
+                                 <ValueBinding>
+                                    <DataSource>patregister</DataSource>
+                                    <BindingPath>sex</BindingPath>
+                                    <Readonly>false</Readonly>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <Deleteable>false</Deleteable>
+                                 <EventExpressions />
+                                 <Name>sex</Name>
+                                 <InnerValue />
+                                 <ToolTip>sex</ToolTip>
+                                 <BackgroundText>性别</BackgroundText>
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                                 <FieldSettings>
+                                    <EditStyle>DropdownList</EditStyle>
+                                    <ListSource>
+                                       <Name />
+                                       <SourceName>sexlist</SourceName>
+                                       <DisplayPath />
+                                       <ValuePath />
+                                       <Items />
+                                    </ListSource>
+                                    <ListValueFormatString />
+                                 </FieldSettings>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>年龄：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>age</ID>
+                                 <ValueBinding>
+                                    <DataSource>patregister</DataSource>
+                                    <BindingPath>age</BindingPath>
+                                    <Readonly>false</Readonly>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>age</Name>
+                                 <InnerValue />
+                                 <ToolTip>age</ToolTip>
+                                 <BackgroundText>年龄</BackgroundText>
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>出生日期：</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>BirthDay</ID>
+                                 <ValueBinding>
+                                    <DataSource>patregister</DataSource>
+                                    <BindingPath>BirthDay</BindingPath>
+                                    <Readonly>false</Readonly>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <Deleteable>false</Deleteable>
+                                 <EventExpressions />
+                                 <Name>BirthDay</Name>
+                                 <DisplayFormat>
+                                    <Style>DateTime</Style>
+                                    <Format>yyyy-MM-dd</Format>
+                                 </DisplayFormat>
+                                 <InnerValue />
+                                 <ToolTip>出生日期</ToolTip>
+                                 <BackgroundText>出生日期</BackgroundText>
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                                 <FieldSettings>
+                                    <EditStyle>Date</EditStyle>
+                                 </FieldSettings>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                     <SpecifyHeight>39.2062531</SpecifyHeight>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <Expressions />
+                     <ScriptItems />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>申请医生：</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>doctor</ID>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>doctor</BindingPath>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>doctor</Name>
+                                 <InnerValue />
+                                 <ToolTip>申请医生</ToolTip>
+                                 <BackgroundText>申请医生</BackgroundText>
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                                 <FieldSettings>
+                                    <EditStyle>DropdownList</EditStyle>
+                                    <ListSource>
+                                       <Name />
+                                       <SourceName>doctorlist</SourceName>
+                                       <DisplayPath />
+                                       <ValuePath />
+                                       <Items />
+                                    </ListSource>
+                                    <ListValueFormatString />
+                                 </FieldSettings>
+                              </Element>
+                           </XElements>
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>病区：</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>wardno</ID>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>wardno</BindingPath>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>wardno</Name>
+                                 <InnerValue />
+                                 <ToolTip>病区</ToolTip>
+                                 <BackgroundText>病区</BackgroundText>
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                                 <FieldSettings>
+                                    <EditStyle>DropdownList</EditStyle>
+                                    <ListSource>
+                                       <Name />
+                                       <SourceName>wardlist</SourceName>
+                                       <DisplayPath />
+                                       <ValuePath />
+                                       <Items />
+                                    </ListSource>
+                                    <ListValueFormatString />
+                                 </FieldSettings>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>床号：</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>bedno</ID>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>bedno</BindingPath>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>bedno</Name>
+                                 <InnerValue />
+                                 <ToolTip>床号</ToolTip>
+                                 <BackgroundText>床号</BackgroundText>
+                                 <FieldSettings>
+                                    <EditStyle>DropdownList</EditStyle>
+                                    <ListSource>
+                                       <Name />
+                                       <SourceName>bednolist</SourceName>
+                                       <DisplayPath />
+                                       <ValuePath />
+                                       <Items />
+                                    </ListSource>
+                                    <ListValueFormatString />
+                                 </FieldSettings>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>申请科室：</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>sqdep</ID>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>sqdep</BindingPath>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>sqdep</Name>
+                                 <InnerValue />
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                                 <FieldSettings>
+                                    <EditStyle>DropdownList</EditStyle>
+                                    <ListSource>
+                                       <Name />
+                                       <SourceName>sqdeplist</SourceName>
+                                       <DisplayPath />
+                                       <ValuePath />
+                                       <Items />
+                                    </ListSource>
+                                    <ListValueFormatString />
+                                 </FieldSettings>
+                              </Element>
+                           </XElements>
+                        </Element>
+                     </XElements>
+                     <SpecifyHeight>30.2062531</SpecifyHeight>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <Expressions />
+                     <ScriptItems />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>联系地址：</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="10">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>address</ID>
+                                 <ValueBinding>
+                                    <DataSource>patregister</DataSource>
+                                    <BindingPath>address</BindingPath>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>address</Name>
+                                 <InnerValue />
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                              </Element>
+                           </XElements>
+                           <ColSpan>6</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>联系电话：</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>telphone</ID>
+                                 <ValueBinding>
+                                    <DataSource>patregister</DataSource>
+                                    <BindingPath>telephone</BindingPath>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>telphone</Name>
+                                 <InnerValue />
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                              </Element>
+                           </XElements>
+                        </Element>
+                     </XElements>
+                     <SpecifyHeight>29.2062531</SpecifyHeight>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <Expressions />
+                     <ScriptItems />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="11">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>检查机房：</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="12">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>othercheck</ID>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>othercheck</BindingPath>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>othercheck</Name>
+                                 <InnerValue />
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                                 <FieldSettings>
+                                    <EditStyle>DropdownList</EditStyle>
+                                    <ListSource>
+                                       <Name />
+                                       <SourceName>otherchecklist</SourceName>
+                                       <DisplayPath />
+                                       <ValuePath />
+                                       <Items />
+                                    </ListSource>
+                                    <ListValueFormatString />
+                                 </FieldSettings>
+                              </Element>
+                           </XElements>
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="12">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>设备：</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="12">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>modality</ID>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>modality</BindingPath>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>modality</Name>
+                                 <InnerValue />
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                                 <FieldSettings>
+                                    <EditStyle>DropdownList</EditStyle>
+                                    <ListSource>
+                                       <Name />
+                                       <SourceName>modalitylist</SourceName>
+                                       <DisplayPath />
+                                       <ValuePath />
+                                       <Items />
+                                    </ListSource>
+                                    <ListValueFormatString />
+                                 </FieldSettings>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="12">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>排队号：</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="12">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>bs</ID>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>bs</BindingPath>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>bs</Name>
+                                 <InnerValue />
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="12">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>预约时间</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="13">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>appoint_date</ID>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>appoint_date</BindingPath>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>appoint_date</Name>
+                                 <InnerValue />
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                                 <FieldSettings>
+                                    <EditStyle>DateTime</EditStyle>
+                                 </FieldSettings>
+                              </Element>
+                           </XElements>
+                        </Element>
+                     </XElements>
+                     <SpecifyHeight>40.1031265</SpecifyHeight>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <Expressions />
+                     <ScriptItems />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>检查部位：</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>checkpos</ID>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>checkpos</BindingPath>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <Name>checkpos</Name>
+                                 <InnerValue />
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                                 <FieldSettings>
+                                    <EditStyle>DropdownList</EditStyle>
+                                    <ListSource>
+                                       <Name />
+                                       <SourceName>checkposlist</SourceName>
+                                       <DisplayPath />
+                                       <ValuePath />
+                                       <Items />
+                                    </ListSource>
+                                    <ListValueFormatString />
+                                 </FieldSettings>
+                              </Element>
+                           </XElements>
+                           <ColSpan>8</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                     </XElements>
+                     <SpecifyHeight>54.2062531</SpecifyHeight>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <Expressions />
+                     <ScriptItems />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <Text>临床诊断：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>clinicend</ID>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>clinicend</BindingPath>
+                                 </ValueBinding>
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <EventExpressions />
+                                 <InnerValue />
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                           <ColSpan>8</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="6">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                           <ColSpan>7</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="6">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="6">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="6">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                           <ColSpan>3</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="6">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="6">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="6">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                     <SpecifyHeight>52.1031265</SpecifyHeight>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <Expressions />
+                     <ScriptItems />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="7">
+                                 <Text>电子病史：</Text>
+                              </Element>
+                           </XElements>
+                           <ColSpan>9</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                     </XElements>
+                     <SpecifyHeight>93.10303</SpecifyHeight>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <Expressions />
+                     <ScriptItems />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="8">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="2">
+                                 <Attributes />
+                                 <ID>clinicinfo</ID>
+                                 <ValueBinding>
+                                    <DataSource>patexam</DataSource>
+                                    <BindingPath>clinicinfo</BindingPath>
+                                 </ValueBinding>
+                                 <VisibleExpression />
+                                 <ValueExpression />
+                                 <Expressions />
+                                 <ScriptItems />
+                                 <XElements />
+                                 <Deleteable>false</Deleteable>
+                                 <EventExpressions />
+                                 <Name>clinicinfo</Name>
+                                 <InnerValue />
+                                 <ToolTip>clinicinfo</ToolTip>
+                                 <EnableHighlight>Disabled</EnableHighlight>
+                              </Element>
+                           </XElements>
+                           <ColSpan>9</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <Expressions />
+                           <ScriptItems />
+                           <XElements />
+                        </Element>
+                     </XElements>
+                     <SpecifyHeight>1653.10315</SpecifyHeight>
+                  </Element>
+               </XElements>
+               <Deleteable>false</Deleteable>
+               <CellBorderVisibility>Hidden</CellBorderVisibility>
+               <CellBackgroundVisibility>Hidden</CellBackgroundVisibility>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>280.220154</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>50</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>184.608276</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>168.788452</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>205.446289</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>229.850464</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>162.845337</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>280.845459</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>524.1457</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="2" />
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextHeader" StyleIndex="0">
+         <Attributes />
+         <Expressions />
+         <ScriptItems />
+         <XElements />
+      </Element>
+      <Element xsi:type="XTextFooter" StyleIndex="0">
+         <Attributes />
+         <Expressions />
+         <ScriptItems />
+         <XElements />
+      </Element>
+   </XElements>
+   <Info>
+      <CreationTime>2014-06-15T12:20:06.6999284+08:00</CreationTime>
+      <LastModifiedTime>2014-07-23T08:49:33.3291857+08:00</LastModifiedTime>
+      <LastPrintTime>1980-01-01T00:00:00</LastPrintTime>
+      <Operator>DCSoft.Writer Version:1.2014.1217.1</Operator>
+      <NumOfPage>1</NumOfPage>
+   </Info>
+   <BodyText>检查申请单
+病人ID号：病人ID号检查号：检查号姓    名：姓名性别：性别年龄：年龄出生日期：出生日期申请医生：申请医生病区：病区床号：床号申请科室：联系地址：联系电话：检查机房：设备：排队号：预约时间检查部位：临床诊断：电子病史：</BodyText>
+   <Comments />
+   <LocalConfig />
+   <PageSettings>
+      <PrinterName />
+      <PaperSource />
+      <LeftMargin>61</LeftMargin>
+      <TopMargin>19</TopMargin>
+      <RightMargin>61</RightMargin>
+      <BottomMargin>59</BottomMargin>
+   </PageSettings>
+   <ContentStyles>
+      <Default xsi:type="DocumentContentStyle">
+         <FontName>宋体</FontName>
+         <FontSize>12</FontSize>
+      </Default>
+      <Styles>
+         <Style Index="0">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="1">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="2">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+         </Style>
+         <Style Index="3">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Right</Align>
+         </Style>
+         <Style Index="4">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderWidth>1</BorderWidth>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="5">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderWidth>6.25</BorderWidth>
+            <BorderTop>true</BorderTop>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="6">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderBottomColor>Blue</BorderBottomColor>
+            <BorderWidth>6.25</BorderWidth>
+            <BorderBottom>true</BorderBottom>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="7">
+            <Color>2, 178, 238</Color>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+         </Style>
+         <Style Index="8">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeftColor>White</BorderLeftColor>
+            <BorderTopColor>White</BorderTopColor>
+            <BorderRightColor>White</BorderRightColor>
+            <BorderBottomColor>White</BorderBottomColor>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="9">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeftColor>White</BorderLeftColor>
+            <BorderTopColor>White</BorderTopColor>
+            <BorderRightColor>White</BorderRightColor>
+            <BorderWidth>6.25</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="10">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeftColor>White</BorderLeftColor>
+            <BorderTopColor>White</BorderTopColor>
+            <BorderRightColor>White</BorderRightColor>
+            <BorderBottomColor>White</BorderBottomColor>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+         </Style>
+         <Style Index="11">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeftColor>White</BorderLeftColor>
+            <BorderTopColor>White</BorderTopColor>
+            <BorderRightColor>White</BorderRightColor>
+            <BorderBottomColor>0, 114, 188</BorderBottomColor>
+            <BorderWidth>6.25</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="12">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeftColor>White</BorderLeftColor>
+            <BorderTopColor>White</BorderTopColor>
+            <BorderRightColor>White</BorderRightColor>
+            <BorderBottomColor>0, 114, 188</BorderBottomColor>
+            <BorderWidth>6.25</BorderWidth>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="13">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeftColor>White</BorderLeftColor>
+            <BorderTopColor>White</BorderTopColor>
+            <BorderRightColor>White</BorderRightColor>
+            <BorderBottomColor>0, 114, 188</BorderBottomColor>
+            <BorderWidth>6.25</BorderWidth>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="14">
+            <Color>Blue</Color>
+            <FontName>隶书</FontName>
+            <FontSize>26.25</FontSize>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="15">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Center</Align>
+         </Style>
+      </Styles>
+   </ContentStyles>
+   <UserHistories />
+</XTextDocument>

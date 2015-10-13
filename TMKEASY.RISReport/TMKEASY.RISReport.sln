@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMKEASY.RISReport", "TMKEASY.RISReport\TMKEASY.RISReport.csproj", "{47B06082-53B7-4D9D-A040-4DE544243D3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestReport", "TestReport\TestReport.csproj", "{F4FEC9AC-6B21-4C87-AAE8-5D8A957369B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47B06082-53B7-4D9D-A040-4DE544243D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B06082-53B7-4D9D-A040-4DE544243D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B06082-53B7-4D9D-A040-4DE544243D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B06082-53B7-4D9D-A040-4DE544243D3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4FEC9AC-6B21-4C87-AAE8-5D8A957369B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4FEC9AC-6B21-4C87-AAE8-5D8A957369B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4FEC9AC-6B21-4C87-AAE8-5D8A957369B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4FEC9AC-6B21-4C87-AAE8-5D8A957369B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

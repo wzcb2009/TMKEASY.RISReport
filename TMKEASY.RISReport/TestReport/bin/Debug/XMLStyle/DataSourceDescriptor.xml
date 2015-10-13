@@ -1,0 +1,931 @@
+﻿<?xml version="1.0"?>
+<DataSourceDescriptor >
+  <Name>数据源</Name>
+  <ChildDescriptors>
+
+    <Descriptor>
+    <Name>报告信息</Name>
+    <ChildDescriptors>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>bedno</BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>床号</BackgroundText>
+      <Name>bedno</Name>
+      <TypeName>System.String</TypeName>
+      <Description>床号</Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>xno</BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>检查号 </BackgroundText>
+      <Name>xno </Name>
+      <TypeName>System.String</TypeName>
+      <Description>检查号</Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>clinicend</BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>临床诊断</BackgroundText>
+      <Name>clinicend </Name>
+      <TypeName>System.String</TypeName>
+      <Description>临床诊断</Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>clinicinfo </BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>电子病史</BackgroundText>
+      <Name>clinicinfo</Name>
+      <TypeName>System.String</TypeName>
+      <Description>电子病史 </Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>patient_id </BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>病人ID号</BackgroundText>
+      <Name>patient_id</Name>
+      <TypeName>System.String</TypeName>
+      <Description>病人ID号 </Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>bs </BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>排队号</BackgroundText>
+      <Name>bs </Name>
+      <TypeName>System.String</TypeName>
+      <Description>排队号 </Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>accessno</BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>访问号 </BackgroundText>
+      <Name>accessno </Name>
+      <TypeName>System.String</TypeName>
+      <Description>访问号</Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>bl </BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>病理</BackgroundText>
+      <Name>bl </Name>
+      <TypeName>System.String</TypeName>
+      <Description>病理</Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>dep_area </BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>影像区域</BackgroundText>
+      <Name>dep_area </Name>
+      <TypeName>System.String</TypeName>
+      <Description>影像区域</Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>imagemethod </BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText></BackgroundText>
+      <Name>imagemethod </Name>
+      <TypeName>System.String</TypeName>
+      <Description></Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>imagepos</BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText></BackgroundText>
+      <Name>imagepos </Name>
+      <TypeName>System.String</TypeName>
+      <Description></Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>layerthick</BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText></BackgroundText>
+      <Name>layerthick </Name>
+      <TypeName>System.String</TypeName>
+      <Description></Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>layerinterval</BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText></BackgroundText>
+      <Name>layerinterval</Name>
+      <TypeName>System.String</TypeName>
+      <Description></Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>track </BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText></BackgroundText>
+      <Name>track</Name>
+      <TypeName>System.String</TypeName>
+      <Description></Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>picture_path</BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText></BackgroundText>
+      <Name>picture_path</Name>
+      <TypeName>System.String</TypeName>
+      <Description></Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>hischeckpos</BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>HIS部位 </BackgroundText>
+      <Name>hischeckpos</Name>
+      <TypeName>System.String</TypeName>
+      <Description>HIS部位 </Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>price </BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>价格 </BackgroundText>
+      <Name>price</Name>
+      <TypeName>System.String</TypeName>
+      <Description>价格 </Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>reportinfo </BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>诊断描述 </BackgroundText>
+      <Name>reportinfo </Name>
+      <TypeName>System.String</TypeName>
+      <Description>诊断描述</Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>reportend</BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>诊断所见</BackgroundText>
+      <Name>reportend </Name>
+      <TypeName>System.String</TypeName>
+      <Description>诊断所见</Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>exammark</BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>备注</BackgroundText>
+      <Name>exammark </Name>
+      <TypeName>System.String</TypeName>
+      <Description>备注 </Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>medcine </BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText></BackgroundText>
+      <Name>medcine</Name>
+      <TypeName>System.String</TypeName>
+      <Description></Description>
+      <ChildDescriptors />
+    </Descriptor>
+    <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>material </BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText></BackgroundText>
+      <Name>material </Name>
+      <TypeName>System.String</TypeName>
+      <Description></Description>
+      <ChildDescriptors />
+    </Descriptor>
+   <Descriptor>
+      <ValueBinding>
+        <DataSource>patexam</DataSource>
+        <BindingPath>checkdate</BindingPath>
+        <AutoUpdate>false</AutoUpdate>
+        <Readonly>false</Readonly>
+      </ValueBinding>
+      <BackgroundText>登记时间</BackgroundText>
+      <Name>checkdate</Name>
+      <DisplayFormat>
+        <Style>DateTime</Style>
+        <Format>yyyy-MM-dd</Format>
+      </DisplayFormat>
+      <TypeName>System.DateTime</TypeName>
+      <Description>登记时间</Description>
+      <ChildDescriptors />
+    </Descriptor>
+      <Descriptor>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>appoint_date</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>预约时间</BackgroundText>
+        <Name>appoint_date</Name>
+        <DisplayFormat>
+          <Style>DateTime</Style>
+          <Format>yyyy-MM-dd</Format>
+        </DisplayFormat>
+        <TypeName>System.DateTime</TypeName>
+        <Description>预约时间</Description>
+        <ChildDescriptors />
+      </Descriptor>
+      <Descriptor>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>advancedate</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>审核时间</BackgroundText>
+        <Name>advancedate</Name>
+        <DisplayFormat>
+          <Style>DateTime</Style>
+          <Format>yyyy-MM-dd</Format>
+        </DisplayFormat>
+        <TypeName>System.DateTime</TypeName>
+        <Description>审核时间</Description>
+        <ChildDescriptors />
+      </Descriptor>
+      <Descriptor>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>reportdate</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>报告时间</BackgroundText>
+        <Name>reportdate</Name>
+        <DisplayFormat>
+          <Style>DateTime</Style>
+          <Format>yyyy-MM-dd</Format>
+        </DisplayFormat>
+        <TypeName>System.DateTime</TypeName>
+        <Description>报告时间</Description>
+        <ChildDescriptors />
+      </Descriptor>
+      <Descriptor>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>modcheckdate</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>检查时间</BackgroundText>
+        <Name>modcheckdate</Name>
+        <DisplayFormat>
+          <Style>DateTime</Style>
+          <Format>yyyy-MM-dd</Format>
+        </DisplayFormat>
+        <TypeName>System.DateTime</TypeName>
+        <Description>检查时间</Description>
+        <ChildDescriptors />
+      </Descriptor>
+      <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>check_status</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>检查状态</BackgroundText>
+        <Name>check_status</Name>
+        <ListSource>
+          <SourceName>check_statuslist</SourceName>
+          <Items>
+            <Item >
+              <Text>未检查</Text>
+              <Value>nocheck</Value>
+            </Item>
+            <Item>
+              <Text>已申请</Text>
+              <Value>已申请</Value>
+            </Item>
+            <Item>
+              <Text>已检查</Text>
+              <Value>已检查</Value>
+            </Item>
+            <Item>
+              <Text>未报告</Text>
+              <Value>未报告</Value>
+            </Item>
+            <Item>
+              <Text>未审核</Text>
+              <Value>未审核</Value>
+            </Item>
+            <Item>
+              <Text>已审核</Text>
+              <Value>已审核</Value>
+            </Item>
+          </Items>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>检查状态</Description>
+        <ChildDescriptors />
+      </Descriptor>
+
+      <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>pat_type</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>病人类型</BackgroundText>
+        <Name>pat_type</Name>
+        <ListSource>
+          <SourceName>pat_typelist</SourceName>
+          <Items>
+            <Item >
+              <Text>门诊</Text>
+              <Value>门诊</Value>
+            </Item>
+            <Item>
+              <Text>住院</Text>
+              <Value>住院</Value>
+            </Item>
+            <Item>
+              <Text>急诊</Text>
+              <Value>急诊</Value>
+            </Item>
+            <Item>
+              <Text>体检</Text>
+              <Value>体检</Value>
+            </Item>
+            <Item>
+              <Text>外院</Text>
+              <Value>外院</Value>
+            </Item>
+          </Items>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>病人类型</Description>
+        <ChildDescriptors />
+      </Descriptor>
+
+      <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>reportdoc</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>报告医生</BackgroundText>
+        <Name>reportdoc</Name>
+        <ListSource>
+          <SourceName>reportdoclist</SourceName>
+          <DisplayPath>listname</DisplayPath>
+          <ValuePath>listcode</ValuePath>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>报告医生</Description>
+        <ChildDescriptors />
+      </Descriptor>
+
+      <Descriptor> 
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>advancedoc</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>审核医生</BackgroundText>
+        <Name>advancedoc</Name>
+        <ListSource>
+          <SourceName>advancedoclist</SourceName>
+          <DisplayPath>listname</DisplayPath>
+          <ValuePath>listcode</ValuePath>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>审核医生</Description>
+        <ChildDescriptors />
+      </Descriptor>
+        <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>radio_doctor</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>操作医生</BackgroundText>
+        <Name>radio_doctor</Name>
+        <ListSource>
+          <SourceName>radio_doctorlist</SourceName>
+          <DisplayPath>listname</DisplayPath>
+          <ValuePath>listcode</ValuePath>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>操作医生</Description>
+        <ChildDescriptors />
+      </Descriptor>
+      <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>sqdep</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>申请科室</BackgroundText>
+        <Name>sqdep</Name>
+        <ListSource>
+          <SourceName>sqdeplist</SourceName>
+          <DisplayPath>listname</DisplayPath>
+          <ValuePath>listcode</ValuePath>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>申请科室</Description>
+        <ChildDescriptors />
+      </Descriptor>
+      <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>doctor</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>申请医生</BackgroundText>
+        <Name>doctor</Name>
+        <ListSource>
+          <SourceName>doctorlist</SourceName>
+          <DisplayPath>listname</DisplayPath>
+          <ValuePath>listcode</ValuePath>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>申请医生</Description>
+        <ChildDescriptors />
+      </Descriptor>
+      <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>wardno</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>申请病区</BackgroundText>
+        <Name>wardno</Name>
+        <ListSource>
+          <SourceName>wardnolist</SourceName>
+          <DisplayPath>listname</DisplayPath>
+          <ValuePath>listcode</ValuePath>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>申请病区</Description>
+        <ChildDescriptors />
+      </Descriptor>
+    <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>machinetype</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>设备名称</BackgroundText>
+        <Name>machinetype</Name>
+        <ListSource>
+          <SourceName>machinetypelist</SourceName>
+          <DisplayPath>listname</DisplayPath>
+          <ValuePath>listcode</ValuePath>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>设备名称</Description>
+        <ChildDescriptors />
+      </Descriptor>
+      <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>diseasetype</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>结果归类</BackgroundText>
+        <Name>diseasetype</Name>
+        <ListSource>
+          <SourceName>diseasetypelist</SourceName>
+          <DisplayPath>listname</DisplayPath>
+          <ValuePath>listcode</ValuePath>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>结果归类</Description>
+        <ChildDescriptors />
+      </Descriptor>
+      <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>reportdisease</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>报告类型</BackgroundText>
+        <Name>reportdisease</Name>
+        <ListSource>
+          <SourceName>reportdiseaselist</SourceName>
+          <DisplayPath>listname</DisplayPath>
+          <ValuePath>listcode</ValuePath>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>报告类型</Description>
+        <ChildDescriptors />
+      </Descriptor>
+      <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>othercheck</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>检查机房</BackgroundText>
+        <Name>othercheck</Name>
+        <ListSource>
+          <SourceName>otherchecklist</SourceName>
+          <DisplayPath>listname</DisplayPath>
+          <ValuePath>listcode</ValuePath>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>检查机房</Description>
+        <ChildDescriptors />
+      </Descriptor>
+       <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>modality</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>检查设备</BackgroundText>
+        <Name>modality</Name>
+        <ListSource>
+          <SourceName>modalitylist</SourceName>
+          <DisplayPath>listname</DisplayPath>
+          <ValuePath>listcode</ValuePath>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>检查设备</Description>
+        <ChildDescriptors />
+      </Descriptor>
+     <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>checktype</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>检查类型</BackgroundText>
+        <Name>checktype</Name>
+        <ListSource>
+          <SourceName>checktypelist</SourceName>
+          <DisplayPath>listname</DisplayPath>
+          <ValuePath>listcode</ValuePath>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>检查类型</Description>
+        <ChildDescriptors />
+      </Descriptor>
+       <Descriptor>
+        <UserEditable>false</UserEditable>
+        <EditStyle>DropdownList</EditStyle>
+        <ValueBinding>
+          <DataSource>patexam</DataSource>
+          <BindingPath>dengjipart</BindingPath>
+          <AutoUpdate>false</AutoUpdate>
+          <Readonly>false</Readonly>
+        </ValueBinding>
+        <BackgroundText>登记部位</BackgroundText>
+        <Name>dengjipart</Name>
+        <ListSource>
+          <SourceName>dengjipartlist</SourceName>
+          <DisplayPath>listname</DisplayPath>
+          <ValuePath>listcode</ValuePath>
+        </ListSource>
+        <TypeName>System.String</TypeName>
+        <Description>登记部位</Description>
+        <ChildDescriptors />
+      </Descriptor>
+  
+  </ChildDescriptors>
+    </Descriptor>
+
+    <Descriptor>
+      <Name>病人基本信息</Name>
+      <ChildDescriptors>
+        <Descriptor>
+          <ValueBinding>
+            <DataSource>patregister</DataSource>
+            <BindingPath>Name</BindingPath>
+            <AutoUpdate>false</AutoUpdate>
+            <Readonly>false</Readonly>
+          </ValueBinding>
+          <BackgroundText>病人姓名</BackgroundText>
+          <Name>patient_name</Name>
+          <TypeName>System.String</TypeName>
+          <Description>病人姓名</Description>
+          <ChildDescriptors />
+        </Descriptor>
+        <Descriptor>
+          <UserEditable>false</UserEditable>
+          <EditStyle>DropdownList</EditStyle>
+          <ValueBinding>
+            <DataSource>patregister</DataSource>
+            <BindingPath>sex</BindingPath>
+            <AutoUpdate>false</AutoUpdate>
+            <Readonly>false</Readonly>
+          </ValueBinding>
+          <BackgroundText>性别</BackgroundText>
+          <Name>patient_sex</Name>
+          <ListSource>
+            <SourceName>sexlist</SourceName>
+            <Items>
+              <Item >
+                <Text>男</Text>
+                <Value>M</Value>
+              </Item>
+              <Item>
+                <Text>女</Text>
+                <Value>F</Value>
+              </Item>
+              <Item>
+                <Text>其他</Text>
+                <Value>其他</Value>
+              </Item>
+            </Items>
+          </ListSource>
+          <TypeName>System.String</TypeName>
+          <Description>性别</Description>
+          <ChildDescriptors />
+        </Descriptor>
+        <Descriptor>
+          <ValueBinding>
+            <DataSource>patregister</DataSource>
+            <BindingPath>age</BindingPath>
+            <AutoUpdate>false</AutoUpdate>
+            <Readonly>false</Readonly>
+          </ValueBinding>
+          <BackgroundText>年龄</BackgroundText>
+          <Name>patient_age</Name>
+          <TypeName>System.String</TypeName>
+          <Description>年龄</Description>
+          <ChildDescriptors />
+        </Descriptor>
+        <Descriptor>
+          <ValueBinding>
+            <DataSource>patregister</DataSource>
+            <BindingPath>scienceinsure</BindingPath>
+            <AutoUpdate>false</AutoUpdate>
+            <Readonly>false</Readonly>
+          </ValueBinding>
+          <BackgroundText>社保号</BackgroundText>
+          <Name>scienceinsure</Name>
+          <TypeName>System.String</TypeName>
+          <Description>社保号</Description>
+          <ChildDescriptors />
+        </Descriptor>
+        <Descriptor>
+          <ValueBinding>
+            <DataSource>patregister</DataSource>
+            <BindingPath>address</BindingPath>
+            <AutoUpdate>false</AutoUpdate>
+            <Readonly>false</Readonly>
+          </ValueBinding>
+          <BackgroundText>地址</BackgroundText>
+          <Name>address</Name>
+          <TypeName>System.String</TypeName>
+          <Description>地址</Description>
+          <ChildDescriptors />
+        </Descriptor>
+        <Descriptor>
+          <ValueBinding>
+            <DataSource>patregister</DataSource>
+            <BindingPath>telephone</BindingPath>
+            <AutoUpdate>false</AutoUpdate>
+            <Readonly>false</Readonly>
+          </ValueBinding>
+          <BackgroundText>电话</BackgroundText>
+          <Name>telephone</Name>
+          <TypeName>System.String</TypeName>
+          <Description>电话</Description>
+          <ChildDescriptors />
+        </Descriptor>
+        <Descriptor>
+          <ValueBinding>
+            <DataSource>patregister</DataSource>
+            <BindingPath>birthday</BindingPath>
+            <AutoUpdate>false</AutoUpdate>
+            <Readonly>false</Readonly>
+          </ValueBinding>
+          <BackgroundText>出生日期</BackgroundText>
+          <Name>birthday</Name>
+          <DisplayFormat>
+            <Style>DateTime</Style>
+            <Format>yyyy-MM-dd</Format>
+          </DisplayFormat>
+          <TypeName>System.DateTime</TypeName>
+          <Description>出生日期</Description>
+          <ChildDescriptors />
+        </Descriptor>
+        <Descriptor>
+          <ValueBinding>
+            <DataSource>patregister</DataSource>
+            <BindingPath>id_card</BindingPath>
+            <AutoUpdate>false</AutoUpdate>
+            <Readonly>false</Readonly>
+          </ValueBinding>
+          <BackgroundText>身份证</BackgroundText>
+          <Name>id_card</Name>
+          <TypeName>System.String</TypeName>
+          <Description>身份证</Description>
+          <ChildDescriptors />
+        </Descriptor>
+        <Descriptor>
+          <ValueBinding>
+            <DataSource>patregister</DataSource>
+            <BindingPath>magcard_id</BindingPath>
+            <AutoUpdate>false</AutoUpdate>
+            <Readonly>false</Readonly>
+          </ValueBinding>
+          <BackgroundText>卡号</BackgroundText>
+          <Name>magcard_id</Name>
+          <TypeName>System.String</TypeName>
+          <Description>卡号</Description>
+          <ChildDescriptors />
+        </Descriptor>
+        <Descriptor>
+          <ValueBinding>
+            <DataSource>patregister</DataSource>
+            <BindingPath>ticket_id</BindingPath>
+            <AutoUpdate>false</AutoUpdate>
+            <Readonly>false</Readonly>
+          </ValueBinding>
+          <BackgroundText>医嘱号</BackgroundText>
+          <Name>ticket_id</Name>
+          <TypeName>System.String</TypeName>
+          <Description>医嘱号</Description>
+          <ChildDescriptors />
+        </Descriptor>
+        <Descriptor>
+          <ValueBinding>
+            <DataSource>patregister</DataSource>
+            <BindingPath>print_status</BindingPath>
+            <AutoUpdate>false</AutoUpdate>
+            <Readonly>false</Readonly>
+          </ValueBinding>
+          <BackgroundText>打印状态</BackgroundText>
+          <Name>print_status</Name>
+          <TypeName>System.String</TypeName>
+          <Description>打印状态</Description>
+          <ChildDescriptors />
+        </Descriptor>
+        <Descriptor>
+          <ValueBinding>
+            <DataSource>patregister</DataSource>
+            <BindingPath>inpatient_id</BindingPath>
+            <AutoUpdate>false</AutoUpdate>
+            <Readonly>false</Readonly>
+          </ValueBinding>
+          <BackgroundText>门诊住院号</BackgroundText>
+          <Name>inpatient_id</Name>
+          <TypeName>System.String</TypeName>
+          <Description>门诊住院号</Description>
+          <ChildDescriptors />
+        </Descriptor>
+        <Descriptor>
+          <ValueBinding>
+            <DataSource>patregister</DataSource>
+            <BindingPath>ftpcode</BindingPath>
+            <AutoUpdate>false</AutoUpdate>
+            <Readonly>false</Readonly>
+          </ValueBinding>
+          <BackgroundText>FTP路径</BackgroundText>
+          <Name>ftpcode</Name>
+          <TypeName>System.String</TypeName>
+          <Description>FTP路径</Description>
+          <ChildDescriptors />
+        </Descriptor>
+      </ChildDescriptors>
+    </Descriptor>
+   
+   
+  </ChildDescriptors>
+</DataSourceDescriptor>
