@@ -84,7 +84,7 @@ namespace TMKEASY.RISReport
             Filldiseasetype();
             FillInputByClass();
             Fillhistroy();
-
+            
 
             if (CONSULT_DIAG_Class.ISEXPERT_DOCTOR(CurReportForm.CurPatexam.accessno) == true)
                 this.huizhen_SimpleButton.ForeColor = Color.Red;
@@ -96,6 +96,7 @@ namespace TMKEASY.RISReport
             {
                 image_ComboBoxEdit.Text = "图文报告";
                 Right_XtraTabControl.SelectedTabPageIndex = 2;
+                DownloadPic();
                 this.GetPic();
             }
             this.Template_TreeList.Focus();
@@ -712,10 +713,18 @@ namespace TMKEASY.RISReport
                     {
                         doubleadvance_SimpleButton.Enabled = true;
                     }
+                    else if ((Share_Class.User.HaveFunction("501") == true) && (CurReportForm.CurPatexam.advancedate .AddDays (+1)>DateTime.Now ))
+                    {
+                        doubleadvance_SimpleButton.Enabled = true;
+                    }
                 }
                 else
                 {
                     if (CurReportForm.CurPatexam.advancedoc == Share_Class.User.user_id)
+                    {
+                        advance_SimpleButton.Enabled = true;
+                    }
+                    else if ((Share_Class.User.HaveFunction("c") == true) && (CurReportForm.CurPatexam.advancedate.AddDays(+1) > DateTime.Now))
                     {
                         advance_SimpleButton.Enabled = true;
                     }
@@ -965,6 +974,7 @@ namespace TMKEASY.RISReport
                         EventArgs_Class args = new EventArgs_Class(CurReportForm.CurPatexam.accessno);
                         if (SaveReport != null)
                             SaveReport(this, args);
+                        UpdatePic();
                     }
                     catch { }
                     ////CurPatexam.UpdateRegister();
@@ -1274,6 +1284,7 @@ namespace TMKEASY.RISReport
             {
                 // ''危急值判定
                 //flog_Class.WriteFlog("危急值判定：" + Convert.ToString(Share_Class.GetTickCount() - CurTickCount))
+                UpdatePic();
 
                 Setup_Dict.danger_patient_info_class.judgeDanger(CurReportForm.CurPatexam.accessno, Share_Class.User.user_des);
 

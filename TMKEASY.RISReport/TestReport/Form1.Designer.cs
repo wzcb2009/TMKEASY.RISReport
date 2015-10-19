@@ -50,7 +50,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(120, 21);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "201507070003";
+            this.textBox1.Text = "201510110001";
             // 
             // button2
             // 

@@ -208,6 +208,8 @@ namespace TMKEASY.RISReport
         public FTPSETUP_Class(string p_FTPCode)
         {
             string d_strSql = "";
+            if (p_FTPCode == "")
+                return;
             d_strSql = "Select * from FTPSETUP where FTPCode='" + p_FTPCode.ToString() + "'";
             DataSet Ds = RISOracle_Class.GetDS(d_strSql, "²éÑ¯FTPSETUP±í³ö´í" + "\r\n " + d_strSql);
             SetPropertyByDs(Ds);

@@ -1305,25 +1305,26 @@ namespace TMKEASY.RISReport
                     {
                         XTextInputFieldElement input_reportdoc = (XTextInputFieldElement)myEditControl.GetElementById("advancedoc");
                         input_reportdoc.Elements.Clear();
-                        float d_width = input_reportdoc.Width;
-                        if ((d_repotrimage != null) && (d_firadvancedoc != null))
-                            d_width = d_width / 2;
-                        if (d_firadvancedoc != null)
-                        {
-                            XTextImageElement imageElement = new XTextImageElement();
-                            imageElement.OwnerDocument = this.myEditControl.Document;
-                            imageElement.ImageValue = d_firadvancedoc;
-                            imageElement.Width = d_width;
-                            imageElement.Height = (input_reportdoc.Height * d_firadvancedoc.Height) / d_width;
-                            input_reportdoc.Elements.Add(imageElement);
-                        }
+                        float d_width = input_reportdoc.AbsBounds.Width;
+                        //if ((d_repotrimage != null) && (d_firadvancedoc != null))
+                        //    d_width = d_width / 2;
+                        //if (d_firadvancedoc != null)
+                        //{
+                        //    XTextImageElement imageElement = new XTextImageElement();
+                        //    //imageElement.OwnerDocument = this.myEditControl.Document;
+                        //    imageElement.ImageValue = d_firadvancedoc;
+                        //    imageElement.Width = d_width;
+                        //    imageElement.Height = (input_reportdoc.Height * d_firadvancedoc.Height) / d_width;
+                        //    input_reportdoc.Elements.Add(imageElement);
+                        //}
+                        input_reportdoc.EditorRefreshView();
                         if (d_repotrimage != null)
                         {
                             XTextImageElement imageElement = new XTextImageElement();
-                            imageElement.OwnerDocument = this.myEditControl.Document;
+                           // imageElement.OwnerDocument = this.myEditControl.Document;
                             imageElement.ImageValue = d_repotrimage;
                             imageElement.Width = d_width;
-                            imageElement.Height = (input_reportdoc.Height * d_repotrimage.Height) / d_width;
+                            imageElement.Height = (input_reportdoc.AbsBounds.Height * d_repotrimage.Height) / d_width;
                             input_reportdoc.Elements.Add(imageElement);
                         }
                         input_reportdoc.EditorRefreshView();
