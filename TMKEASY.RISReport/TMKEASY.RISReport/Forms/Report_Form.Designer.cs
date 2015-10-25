@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Report_Form));
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition5 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition6 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition7 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition8 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition9 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition10 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition11 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition12 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition13 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition14 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition15 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition16 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.grade_GridColumn = new DevExpress.XtraGrid.Columns.GridColumn();
             this.check_status_GridColumn = new DevExpress.XtraGrid.Columns.GridColumn();
             this.pat_type_GridColumn = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -283,6 +283,7 @@
             this.caption_picturebox = new System.Windows.Forms.PictureBox();
             this.Check_imageList = new System.Windows.Forms.ImageList(this.components);
             this.GetPic_Timer = new System.Windows.Forms.Timer(this.components);
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Report_GroupControl)).BeginInit();
             this.Report_GroupControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Center_panelControl)).BeginInit();
@@ -2338,63 +2339,63 @@
             this.GridColumn33,
             this.pat_type_GridColumn,
             this.exammark_GridColumn});
-            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition1.Appearance.Options.UseForeColor = true;
-            styleFormatCondition1.ApplyToRow = true;
-            styleFormatCondition1.Column = this.grade_GridColumn;
-            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition1.Value1 = "高";
-            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.Cyan;
-            styleFormatCondition2.Appearance.Options.UseForeColor = true;
-            styleFormatCondition2.ApplyToRow = true;
-            styleFormatCondition2.Column = this.check_status_GridColumn;
-            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition2.Value1 = "重写";
-            styleFormatCondition3.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition3.Appearance.Options.UseForeColor = true;
-            styleFormatCondition3.ApplyToRow = true;
-            styleFormatCondition3.Column = this.pat_type_GridColumn;
-            styleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition3.Value1 = "绿检";
-            styleFormatCondition4.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition4.Appearance.Options.UseForeColor = true;
-            styleFormatCondition4.ApplyToRow = true;
-            styleFormatCondition4.Column = this.pat_type_GridColumn;
-            styleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition4.Value1 = "急诊";
-            styleFormatCondition5.Appearance.ForeColor = System.Drawing.Color.Blue;
-            styleFormatCondition5.Appearance.Options.UseForeColor = true;
-            styleFormatCondition5.ApplyToRow = true;
-            styleFormatCondition5.Column = this.pat_type_GridColumn;
-            styleFormatCondition5.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition5.Value1 = "住院";
-            styleFormatCondition6.Appearance.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            styleFormatCondition6.Appearance.Options.UseForeColor = true;
-            styleFormatCondition6.ApplyToRow = true;
-            styleFormatCondition6.Column = this.pat_type_GridColumn;
-            styleFormatCondition6.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition6.Value1 = "体检";
-            styleFormatCondition7.Appearance.ForeColor = System.Drawing.Color.Lime;
-            styleFormatCondition7.Appearance.Options.UseForeColor = true;
-            styleFormatCondition7.ApplyToRow = true;
-            styleFormatCondition7.Column = this.reportdisease_GridColumn;
-            styleFormatCondition7.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition7.Value1 = "紧急报告";
-            styleFormatCondition8.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition8.Appearance.Options.UseForeColor = true;
-            styleFormatCondition8.ApplyToRow = true;
-            styleFormatCondition8.Column = this.grade_GridColumn;
-            styleFormatCondition8.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition8.Value1 = "VIP";
+            styleFormatCondition9.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition9.Appearance.Options.UseForeColor = true;
+            styleFormatCondition9.ApplyToRow = true;
+            styleFormatCondition9.Column = this.grade_GridColumn;
+            styleFormatCondition9.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition9.Value1 = "高";
+            styleFormatCondition10.Appearance.ForeColor = System.Drawing.Color.Cyan;
+            styleFormatCondition10.Appearance.Options.UseForeColor = true;
+            styleFormatCondition10.ApplyToRow = true;
+            styleFormatCondition10.Column = this.check_status_GridColumn;
+            styleFormatCondition10.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition10.Value1 = "重写";
+            styleFormatCondition11.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition11.Appearance.Options.UseForeColor = true;
+            styleFormatCondition11.ApplyToRow = true;
+            styleFormatCondition11.Column = this.pat_type_GridColumn;
+            styleFormatCondition11.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition11.Value1 = "绿检";
+            styleFormatCondition12.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition12.Appearance.Options.UseForeColor = true;
+            styleFormatCondition12.ApplyToRow = true;
+            styleFormatCondition12.Column = this.pat_type_GridColumn;
+            styleFormatCondition12.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition12.Value1 = "急诊";
+            styleFormatCondition13.Appearance.ForeColor = System.Drawing.Color.Blue;
+            styleFormatCondition13.Appearance.Options.UseForeColor = true;
+            styleFormatCondition13.ApplyToRow = true;
+            styleFormatCondition13.Column = this.pat_type_GridColumn;
+            styleFormatCondition13.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition13.Value1 = "住院";
+            styleFormatCondition14.Appearance.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            styleFormatCondition14.Appearance.Options.UseForeColor = true;
+            styleFormatCondition14.ApplyToRow = true;
+            styleFormatCondition14.Column = this.pat_type_GridColumn;
+            styleFormatCondition14.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition14.Value1 = "体检";
+            styleFormatCondition15.Appearance.ForeColor = System.Drawing.Color.Lime;
+            styleFormatCondition15.Appearance.Options.UseForeColor = true;
+            styleFormatCondition15.ApplyToRow = true;
+            styleFormatCondition15.Column = this.reportdisease_GridColumn;
+            styleFormatCondition15.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition15.Value1 = "紧急报告";
+            styleFormatCondition16.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition16.Appearance.Options.UseForeColor = true;
+            styleFormatCondition16.ApplyToRow = true;
+            styleFormatCondition16.Column = this.grade_GridColumn;
+            styleFormatCondition16.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition16.Value1 = "VIP";
             this.GridView1.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition1,
-            styleFormatCondition2,
-            styleFormatCondition3,
-            styleFormatCondition4,
-            styleFormatCondition5,
-            styleFormatCondition6,
-            styleFormatCondition7,
-            styleFormatCondition8});
+            styleFormatCondition9,
+            styleFormatCondition10,
+            styleFormatCondition11,
+            styleFormatCondition12,
+            styleFormatCondition13,
+            styleFormatCondition14,
+            styleFormatCondition15,
+            styleFormatCondition16});
             this.GridView1.GridControl = this.GridControl1;
             this.GridView1.Name = "GridView1";
             this.GridView1.OptionsCustomization.AllowColumnMoving = false;
@@ -2781,7 +2782,8 @@
             this.advancedoc_GridColumn,
             this.sqdep_GridColumn,
             this.REPORT_TEXT_GridColumn,
-            this.GridColumn47});
+            this.GridColumn47,
+            this.gridColumn1});
             this.patexam_GridView.GridControl = this.patexam_GridControl;
             this.patexam_GridView.Name = "patexam_GridView";
             this.patexam_GridView.OptionsBehavior.Editable = false;
@@ -2818,16 +2820,18 @@
             this.birthday_GridColumn.FieldName = "patient_birth_date";
             this.birthday_GridColumn.Name = "birthday_GridColumn";
             this.birthday_GridColumn.Visible = true;
-            this.birthday_GridColumn.VisibleIndex = 5;
+            this.birthday_GridColumn.VisibleIndex = 6;
             this.birthday_GridColumn.Width = 70;
             // 
             // checkdate_GridColumn
             // 
             this.checkdate_GridColumn.Caption = "登记日期";
+            this.checkdate_GridColumn.DisplayFormat.FormatString = "d";
+            this.checkdate_GridColumn.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.checkdate_GridColumn.FieldName = "scheduled_dttm";
             this.checkdate_GridColumn.Name = "checkdate_GridColumn";
             this.checkdate_GridColumn.Visible = true;
-            this.checkdate_GridColumn.VisibleIndex = 4;
+            this.checkdate_GridColumn.VisibleIndex = 5;
             this.checkdate_GridColumn.Width = 80;
             // 
             // reportend_GridColumn
@@ -2836,7 +2840,7 @@
             this.reportend_GridColumn.FieldName = "conclusion";
             this.reportend_GridColumn.Name = "reportend_GridColumn";
             this.reportend_GridColumn.Visible = true;
-            this.reportend_GridColumn.VisibleIndex = 3;
+            this.reportend_GridColumn.VisibleIndex = 4;
             this.reportend_GridColumn.Width = 70;
             // 
             // Patient_id_GridColumn
@@ -2847,7 +2851,7 @@
             this.Patient_id_GridColumn.FieldName = "patient_id";
             this.Patient_id_GridColumn.Name = "Patient_id_GridColumn";
             this.Patient_id_GridColumn.Visible = true;
-            this.Patient_id_GridColumn.VisibleIndex = 7;
+            this.Patient_id_GridColumn.VisibleIndex = 8;
             // 
             // modality_GridColumn
             // 
@@ -2864,7 +2868,7 @@
             this.accessno_GridColumn.FieldName = "accession_no";
             this.accessno_GridColumn.Name = "accessno_GridColumn";
             this.accessno_GridColumn.Visible = true;
-            this.accessno_GridColumn.VisibleIndex = 8;
+            this.accessno_GridColumn.VisibleIndex = 9;
             this.accessno_GridColumn.Width = 60;
             // 
             // reportdoc_GridColumn
@@ -2873,7 +2877,7 @@
             this.reportdoc_GridColumn.FieldName = "transcriber_name";
             this.reportdoc_GridColumn.Name = "reportdoc_GridColumn";
             this.reportdoc_GridColumn.Visible = true;
-            this.reportdoc_GridColumn.VisibleIndex = 9;
+            this.reportdoc_GridColumn.VisibleIndex = 10;
             this.reportdoc_GridColumn.Width = 70;
             // 
             // advancedoc_GridColumn
@@ -2882,7 +2886,7 @@
             this.advancedoc_GridColumn.FieldName = "approver_name";
             this.advancedoc_GridColumn.Name = "advancedoc_GridColumn";
             this.advancedoc_GridColumn.Visible = true;
-            this.advancedoc_GridColumn.VisibleIndex = 10;
+            this.advancedoc_GridColumn.VisibleIndex = 11;
             this.advancedoc_GridColumn.Width = 70;
             // 
             // sqdep_GridColumn
@@ -2891,7 +2895,7 @@
             this.sqdep_GridColumn.FieldName = "request_department";
             this.sqdep_GridColumn.Name = "sqdep_GridColumn";
             this.sqdep_GridColumn.Visible = true;
-            this.sqdep_GridColumn.VisibleIndex = 11;
+            this.sqdep_GridColumn.VisibleIndex = 12;
             this.sqdep_GridColumn.Width = 70;
             // 
             // REPORT_TEXT_GridColumn
@@ -2906,7 +2910,7 @@
             this.GridColumn47.FieldName = "scheduled_proc_status";
             this.GridColumn47.Name = "GridColumn47";
             this.GridColumn47.Visible = true;
-            this.GridColumn47.VisibleIndex = 6;
+            this.GridColumn47.VisibleIndex = 7;
             // 
             // memoEdit1
             // 
@@ -3463,6 +3467,14 @@
             this.GetPic_Timer.Interval = 1000;
             this.GetPic_Timer.Tick += new System.EventHandler(this.GetPic_Timer_Tick);
             // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "年龄";
+            this.gridColumn1.FieldName = "age";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 3;
+            // 
             // Report_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -3885,6 +3897,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem27;
         private TMKEASY.QualityControl.Report_UserControl report_UserControl1;
         internal DevExpress.XtraEditors.SimpleButton doubleadvance_SimpleButton;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
 
 
     }

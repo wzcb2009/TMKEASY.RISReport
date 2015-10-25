@@ -44,7 +44,7 @@ namespace TMKEASY.RISReport
         //    d_ReportEdit_UserControl = p_reportform;
         //    FormInit();
         //}
-     //   FTPSETUP_Class CurFTPSETUP = new FTPSETUP_Class();
+        //   FTPSETUP_Class CurFTPSETUP = new FTPSETUP_Class();
         patexam_Class CurPatexam = new patexam_Class();
         //public void GetFTPSETUPByFTPCODE()
         //{
@@ -114,7 +114,7 @@ namespace TMKEASY.RISReport
             {
                 myEditControl.LoadDocumentFromString(reportxml.xmlfile.ToString(), "xml");
             }
-            else 
+            else
             {
                 //FillInputXMLByClass();
                 //DataTable dt = new DataTable();
@@ -252,7 +252,7 @@ namespace TMKEASY.RISReport
             if (CurPatexam.machinetype == "")
             {
 
-                string d_GetValue =RisSetup_Class  .GetINI("setup",CurPatexam.dep + "machinetype");
+                string d_GetValue = RisSetup_Class.GetINI("setup", CurPatexam.dep + "machinetype");
                 CurPatexam.machinetype = d_GetValue;
             }
             string d_ReportType = "";
@@ -303,7 +303,7 @@ namespace TMKEASY.RISReport
         private void FormInit()
         {
             apply_writerControl.Visible = false;
-         //   DownloadXML();
+            //   DownloadXML();
             GetXMLFile();
             apply_writerControl.Font = new Font(System.Windows.Forms.Control.DefaultFont.Name, 12);
             apply_writerControl.Font = new Font("宋体", 9);
@@ -351,10 +351,10 @@ namespace TMKEASY.RISReport
             string d_reportend = "";
             FillClassByInputXML(ref d_reportinfo, ref d_reportend);
             //d_reportform.FillTemplate(d_reportinfo, d_reportend);
-            d_ReportEdit.CurReportForm .FillTemplate(d_reportinfo, d_reportend);
+            d_ReportEdit.CurReportForm.FillTemplate(d_reportinfo, d_reportend);
             ShowErr_Form d_form = new ShowErr_Form("调用成功", "提示");
             d_form.ShowDialog();
-            d_ReportEdit.Report_XtraTabControl.SelectedTabPage = d_ReportEdit.Report_XtraTabPage ;
+            d_ReportEdit.Report_XtraTabControl.SelectedTabPage = d_ReportEdit.Report_XtraTabPage;
             //d_reportform.Report_XtraTabControl.SelectedTabPage = d_reportform.Report_XtraTabPage ;
             //d_ReportEdit_UserControl.Report_XtraTabControl.SelectedTabPage = d_DG_ReportEdit_UserControl.Report_XtraTabPage;
             //d_ReportEdit.Report_XtraTabControlSelectedTabPage("Report_XtraTabPage");
@@ -368,7 +368,7 @@ namespace TMKEASY.RISReport
                 d_Modality = CurPatexam.modality.Substring(0, 2);
             if (p_OpenPacsType == "PIVIEW")
             {
-               Share_Class .ShowPiviewPacsPicture(CurPatexam.xno, CurPatexam.Patient_id, CurPatexam.accessno, d_Modality);
+                Share_Class.ShowPiviewPacsPicture(CurPatexam.xno, CurPatexam.Patient_id, CurPatexam.accessno, d_Modality);
             }
             else
             {
@@ -389,7 +389,7 @@ namespace TMKEASY.RISReport
                 if (CurPatexam.picture_path.Trim() != "")
                 { //'进入显示申请单图片
 
-                    ShowApplyImage_Form CurShowApplyImage_Form = new ShowApplyImage_Form(CurPatexam.picture_path, "" );
+                    ShowApplyImage_Form CurShowApplyImage_Form = new ShowApplyImage_Form(CurPatexam.picture_path, "");
                     CurShowApplyImage_Form.ShowDialog();
 
                 }
@@ -410,6 +410,12 @@ namespace TMKEASY.RISReport
         {
             patexam_Class ApplyPatexam = new patexam_Class(CurPatexam.accessno);
             patregister_Class ApplyPatRegister = new patregister_Class(CurPatexam.accessno);
+            if ((ApplyPatexam.dep == "US") || (ApplyPatexam.dep == "DG") || (ApplyPatexam.dep == "ES") || (ApplyPatexam.dep == "内窥镜"))
+            {
+                FTP_image_simpleButton.Visible = true;
+            }
+            else
+                FTP_image_simpleButton.Visible = false;
             Image d_image = null;
             //if (ApplyPatexam.picture_path.Trim() != "")
             //{
@@ -465,6 +471,7 @@ namespace TMKEASY.RISReport
                 apply_writerControl.SetDocumentParameterValue("patexam", ApplyPatexam);
                 apply_writerControl.SetDocumentParameterValue("patregister", ApplyPatRegister);
                 apply_writerControl.ExecuteCommand("UpdateViewForDataSource", false, null);
+
             }
         }
         private void Image_SimpleButton_Click(object sender, EventArgs e)
@@ -472,7 +479,13 @@ namespace TMKEASY.RISReport
             toolStripuItem2_Click(null, null);
         }
 
-         
+        private void FTP_image_simpleButton_Click(object sender, EventArgs e)
+        {
+            ShowPic_Form d_form = new ShowPic_Form(CurPatexam.accessno);
+            d_form.ShowDialog();
+        }
+
+
 
 
     }

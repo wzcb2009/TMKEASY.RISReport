@@ -316,8 +316,8 @@ namespace TMKEASY.RISReport
         public static DataSet Findpatexamhistroy(string p_Name, string p_patient_id, string p_acceson, string d_xno)
         {
             string d_strSql = "";
-            d_strSql = "select patient_name,patient_sex, patient_birth_date,scheduled_dttm,conclusion,REPORT_TEXT,mwlwl.patient_id,scheduled_modality,accession_no,transcriber_name,approver_name,request_department from mwlwl,reportwl "
-                    + " where mwlwl.accession_no=reportwl.exam_id ";
+            d_strSql = "select patient_name,patient_sex, patient_birth_date,to_date(scheduled_dttm,'yyyyMMddhh24miss') scheduled_dttm,,conclusion,REPORT_TEXT,mwlwl.patient_id,scheduled_modality,accession_no,transcriber_name,approver_name,request_department,age from mwlwl,reportwl,patregister "
+                    + " where mwlwl.accession_no=reportwl.exam_id and patregister.clinicno=mwlwl.accession_no";
             string d_GetValue = RisSetup_Class.GetINI("setup", "search_historyreport");
             //if (d_GetValue == "name")
             d_strSql = d_strSql + " and patient_name='" + p_Name.Trim() + "'";

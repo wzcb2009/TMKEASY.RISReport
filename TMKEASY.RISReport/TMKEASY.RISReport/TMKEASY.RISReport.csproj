@@ -188,6 +188,12 @@
     <Compile Include="Forms\ShowErr_Form.Designer.cs">
       <DependentUpon>ShowErr_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ShowPic_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowPic_Form.Designer.cs">
+      <DependentUpon>ShowPic_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\template_Word_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +260,10 @@
     <EmbeddedResource Include="Forms\ShowApply_Form_old.resx">
       <SubType>Designer</SubType>
       <DependentUpon>ShowApply_Form_old.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShowPic_Form.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ShowPic_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\template_Word_form.resx">
       <SubType>Designer</SubType>

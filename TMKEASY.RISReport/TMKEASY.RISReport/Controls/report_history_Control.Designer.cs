@@ -35,6 +35,7 @@
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.apply_writerControl = new DCSoft.Writer.Controls.WriterControl();
             this.myEditControl = new DCSoft.Writer.Controls.WriterControl();
+            this.FTP_image_simpleButton = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -44,6 +45,7 @@
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.Apply_SimpleButton);
+            this.panelControl1.Controls.Add(this.FTP_image_simpleButton);
             this.panelControl1.Controls.Add(this.Add_SimpleButton);
             this.panelControl1.Controls.Add(this.Image_SimpleButton);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -58,7 +60,7 @@
             this.Apply_SimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Apply_SimpleButton.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Apply_SimpleButton.Appearance.Options.UseFont = true;
-            this.Apply_SimpleButton.Location = new System.Drawing.Point(388, 6);
+            this.Apply_SimpleButton.Location = new System.Drawing.Point(386, 6);
             this.Apply_SimpleButton.Name = "Apply_SimpleButton";
             this.Apply_SimpleButton.Size = new System.Drawing.Size(88, 27);
             this.Apply_SimpleButton.TabIndex = 103;
@@ -70,7 +72,7 @@
             this.Add_SimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Add_SimpleButton.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_SimpleButton.Appearance.Options.UseFont = true;
-            this.Add_SimpleButton.Location = new System.Drawing.Point(300, 6);
+            this.Add_SimpleButton.Location = new System.Drawing.Point(296, 6);
             this.Add_SimpleButton.Name = "Add_SimpleButton";
             this.Add_SimpleButton.Size = new System.Drawing.Size(88, 27);
             this.Add_SimpleButton.TabIndex = 102;
@@ -138,6 +140,19 @@
             this.myEditControl.Size = new System.Drawing.Size(565, 509);
             this.myEditControl.TabIndex = 11;
             // 
+            // FTP_image_simpleButton
+            // 
+            this.FTP_image_simpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.FTP_image_simpleButton.Appearance.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FTP_image_simpleButton.Appearance.Options.UseFont = true;
+            this.FTP_image_simpleButton.Location = new System.Drawing.Point(206, 6);
+            this.FTP_image_simpleButton.Name = "FTP_image_simpleButton";
+            this.FTP_image_simpleButton.Size = new System.Drawing.Size(88, 27);
+            this.FTP_image_simpleButton.TabIndex = 102;
+            this.FTP_image_simpleButton.Text = "FTP图像";
+            this.FTP_image_simpleButton.Visible = false;
+            this.FTP_image_simpleButton.Click += new System.EventHandler(this.FTP_image_simpleButton_Click);
+            // 
             // report_history_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -163,5 +178,6 @@
         private DevExpress.XtraEditors.PanelControl panelControl2;
         internal DCSoft.Writer.Controls.WriterControl apply_writerControl;
         internal DCSoft.Writer.Controls.WriterControl myEditControl;
+        internal DevExpress.XtraEditors.SimpleButton FTP_image_simpleButton;
     }
 }

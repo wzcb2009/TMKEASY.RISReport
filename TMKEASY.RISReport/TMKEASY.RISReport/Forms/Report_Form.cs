@@ -84,7 +84,7 @@ namespace TMKEASY.RISReport
             Filldiseasetype();
             FillInputByClass();
             Fillhistroy();
-            
+
 
             if (CONSULT_DIAG_Class.ISEXPERT_DOCTOR(CurReportForm.CurPatexam.accessno) == true)
                 this.huizhen_SimpleButton.ForeColor = Color.Red;
@@ -709,14 +709,18 @@ namespace TMKEASY.RISReport
                     {
                         doubleadvance_SimpleButton.Enabled = true;
                     }
-                    else if ((Share_Class.User.HaveFunction("501") == true) && (CurReportForm.CurPatexam.advancedoc == Share_Class.User.user_id))
+                    else if ((Share_Class.User.HaveFunction("501") == true) )
                     {
                         doubleadvance_SimpleButton.Enabled = true;
                     }
-                    else if ((Share_Class.User.HaveFunction("501") == true) && (CurReportForm.CurPatexam.advancedate .AddDays (+1)>DateTime.Now ))
-                    {
-                        doubleadvance_SimpleButton.Enabled = true;
-                    }
+                    //else if ((Share_Class.User.HaveFunction("501") == true) && (CurReportForm.CurPatexam.advancedoc == Share_Class.User.user_id))
+                    //{
+                    //    doubleadvance_SimpleButton.Enabled = true;
+                    //}
+                    //else if ((Share_Class.User.HaveFunction("501") == true) && (CurReportForm.CurPatexam.advancedate.AddDays(+1) > DateTime.Now))
+                    //{
+                    //    doubleadvance_SimpleButton.Enabled = true;
+                    //}
                 }
                 else
                 {
@@ -1096,6 +1100,50 @@ namespace TMKEASY.RISReport
         {
             try
             {
+                patexam_Class p_patexam = new patexam_Class(CurReportForm.CurPatexam.accessno);
+                string showstr = "";
+
+                if (p_patexam.check_status == "已审核")
+                {
+                    if (CurReportForm.CurPatexam.check_status != "已审核")
+                    {
+                        if (p_status == "保存")
+                        {
+                            showstr = "该报告已审核无法再保存，请退出报告界面或者重新审核";
+                            showstr += "\r\n" + "审核医生：" + p_patexam.advancedoc + "审核时间：" + p_patexam.advancedate.ToString();
+
+                        }
+                        else
+                        {
+                            showstr = "该报告已审核,是否继续审核";
+                            showstr += "\r\n" + "审核医生：" + p_patexam.advancedoc + "审核时间：" + p_patexam.advancedate.ToString();
+                            ShowErr_Form d_form = new ShowErr_Form(showstr, "是", "否");
+                            if (d_form.ShowDialog() == DialogResult.OK)
+                            {
+                                showstr = "";
+                            }
+                            else
+                                return false;
+                        }
+                    }
+                }
+                else if (p_patexam.check_status == "未审核")
+                {
+
+                    if ((p_patexam.reportdoc != "") && (p_patexam.reportdoc != Share_Class.User.user_id) && (p_status == "保存"))
+                    {
+                        showstr = "该报告已保存无法再保存，请退出报告界面或者重新审核";
+                        showstr += "\r\n" + "报告医生：" + p_patexam.reportdoc + "报告时间：" + p_patexam.reportdate.ToString();
+                    }
+                }
+
+
+                if (showstr != "")
+                {
+                    ShowErr_Form d_form = new ShowErr_Form(showstr, "错误");
+                    d_form.ShowDialog();
+                    return false;
+                }
                 if (p_tempflag == true)
                 {
                     if (p_status == "保存")

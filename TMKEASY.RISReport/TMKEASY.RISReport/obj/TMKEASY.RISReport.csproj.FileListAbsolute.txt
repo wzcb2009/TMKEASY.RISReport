@@ -66,3 +66,4 @@ E:\work\RISReport\TMKEASY.RISReport\TMKEASY.RISReport\obj\Debug\TMKEASY.RISRepor
 E:\work\RISReport\TMKEASY.RISReport\TMKEASY.RISReport\obj\Debug\TMKEASY.RISReport.dll.licenses
 E:\work\RISReport\TMKEASY.RISReport\TMKEASY.RISReport\obj\Debug\TMKEASY.RISReport.dll
 E:\work\RISReport\TMKEASY.RISReport\TMKEASY.RISReport\obj\Debug\TMKEASY.RISReport.pdb
+E:\work\RISReport\TMKEASY.RISReport\TMKEASY.RISReport\obj\Debug\TMKEASY.RISReport.ShowPic_Form.resources
