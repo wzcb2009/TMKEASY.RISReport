@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Report_Form));
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition9 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition10 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition11 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition12 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition13 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition14 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition15 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition16 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition5 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition6 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition7 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition8 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.grade_GridColumn = new DevExpress.XtraGrid.Columns.GridColumn();
             this.check_status_GridColumn = new DevExpress.XtraGrid.Columns.GridColumn();
             this.pat_type_GridColumn = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -235,6 +235,7 @@
             this.sqdep_GridColumn = new DevExpress.XtraGrid.Columns.GridColumn();
             this.REPORT_TEXT_GridColumn = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GridColumn47 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
             this.memoEdit2 = new DevExpress.XtraEditors.MemoEdit();
             this.label10 = new System.Windows.Forms.Label();
@@ -283,7 +284,7 @@
             this.caption_picturebox = new System.Windows.Forms.PictureBox();
             this.Check_imageList = new System.Windows.Forms.ImageList(this.components);
             this.GetPic_Timer = new System.Windows.Forms.Timer(this.components);
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.dzbs_simpleButton = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.Report_GroupControl)).BeginInit();
             this.Report_GroupControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Center_panelControl)).BeginInit();
@@ -2339,63 +2340,63 @@
             this.GridColumn33,
             this.pat_type_GridColumn,
             this.exammark_GridColumn});
-            styleFormatCondition9.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition9.Appearance.Options.UseForeColor = true;
-            styleFormatCondition9.ApplyToRow = true;
-            styleFormatCondition9.Column = this.grade_GridColumn;
-            styleFormatCondition9.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition9.Value1 = "高";
-            styleFormatCondition10.Appearance.ForeColor = System.Drawing.Color.Cyan;
-            styleFormatCondition10.Appearance.Options.UseForeColor = true;
-            styleFormatCondition10.ApplyToRow = true;
-            styleFormatCondition10.Column = this.check_status_GridColumn;
-            styleFormatCondition10.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition10.Value1 = "重写";
-            styleFormatCondition11.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition11.Appearance.Options.UseForeColor = true;
-            styleFormatCondition11.ApplyToRow = true;
-            styleFormatCondition11.Column = this.pat_type_GridColumn;
-            styleFormatCondition11.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition11.Value1 = "绿检";
-            styleFormatCondition12.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition12.Appearance.Options.UseForeColor = true;
-            styleFormatCondition12.ApplyToRow = true;
-            styleFormatCondition12.Column = this.pat_type_GridColumn;
-            styleFormatCondition12.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition12.Value1 = "急诊";
-            styleFormatCondition13.Appearance.ForeColor = System.Drawing.Color.Blue;
-            styleFormatCondition13.Appearance.Options.UseForeColor = true;
-            styleFormatCondition13.ApplyToRow = true;
-            styleFormatCondition13.Column = this.pat_type_GridColumn;
-            styleFormatCondition13.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition13.Value1 = "住院";
-            styleFormatCondition14.Appearance.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            styleFormatCondition14.Appearance.Options.UseForeColor = true;
-            styleFormatCondition14.ApplyToRow = true;
-            styleFormatCondition14.Column = this.pat_type_GridColumn;
-            styleFormatCondition14.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition14.Value1 = "体检";
-            styleFormatCondition15.Appearance.ForeColor = System.Drawing.Color.Lime;
-            styleFormatCondition15.Appearance.Options.UseForeColor = true;
-            styleFormatCondition15.ApplyToRow = true;
-            styleFormatCondition15.Column = this.reportdisease_GridColumn;
-            styleFormatCondition15.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition15.Value1 = "紧急报告";
-            styleFormatCondition16.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition16.Appearance.Options.UseForeColor = true;
-            styleFormatCondition16.ApplyToRow = true;
-            styleFormatCondition16.Column = this.grade_GridColumn;
-            styleFormatCondition16.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition16.Value1 = "VIP";
+            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.Options.UseForeColor = true;
+            styleFormatCondition1.ApplyToRow = true;
+            styleFormatCondition1.Column = this.grade_GridColumn;
+            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition1.Value1 = "高";
+            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.Cyan;
+            styleFormatCondition2.Appearance.Options.UseForeColor = true;
+            styleFormatCondition2.ApplyToRow = true;
+            styleFormatCondition2.Column = this.check_status_GridColumn;
+            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition2.Value1 = "重写";
+            styleFormatCondition3.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition3.Appearance.Options.UseForeColor = true;
+            styleFormatCondition3.ApplyToRow = true;
+            styleFormatCondition3.Column = this.pat_type_GridColumn;
+            styleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition3.Value1 = "绿检";
+            styleFormatCondition4.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition4.Appearance.Options.UseForeColor = true;
+            styleFormatCondition4.ApplyToRow = true;
+            styleFormatCondition4.Column = this.pat_type_GridColumn;
+            styleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition4.Value1 = "急诊";
+            styleFormatCondition5.Appearance.ForeColor = System.Drawing.Color.Blue;
+            styleFormatCondition5.Appearance.Options.UseForeColor = true;
+            styleFormatCondition5.ApplyToRow = true;
+            styleFormatCondition5.Column = this.pat_type_GridColumn;
+            styleFormatCondition5.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition5.Value1 = "住院";
+            styleFormatCondition6.Appearance.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            styleFormatCondition6.Appearance.Options.UseForeColor = true;
+            styleFormatCondition6.ApplyToRow = true;
+            styleFormatCondition6.Column = this.pat_type_GridColumn;
+            styleFormatCondition6.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition6.Value1 = "体检";
+            styleFormatCondition7.Appearance.ForeColor = System.Drawing.Color.Lime;
+            styleFormatCondition7.Appearance.Options.UseForeColor = true;
+            styleFormatCondition7.ApplyToRow = true;
+            styleFormatCondition7.Column = this.reportdisease_GridColumn;
+            styleFormatCondition7.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition7.Value1 = "紧急报告";
+            styleFormatCondition8.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition8.Appearance.Options.UseForeColor = true;
+            styleFormatCondition8.ApplyToRow = true;
+            styleFormatCondition8.Column = this.grade_GridColumn;
+            styleFormatCondition8.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition8.Value1 = "VIP";
             this.GridView1.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition9,
-            styleFormatCondition10,
-            styleFormatCondition11,
-            styleFormatCondition12,
-            styleFormatCondition13,
-            styleFormatCondition14,
-            styleFormatCondition15,
-            styleFormatCondition16});
+            styleFormatCondition1,
+            styleFormatCondition2,
+            styleFormatCondition3,
+            styleFormatCondition4,
+            styleFormatCondition5,
+            styleFormatCondition6,
+            styleFormatCondition7,
+            styleFormatCondition8});
             this.GridView1.GridControl = this.GridControl1;
             this.GridView1.Name = "GridView1";
             this.GridView1.OptionsCustomization.AllowColumnMoving = false;
@@ -2912,6 +2913,14 @@
             this.GridColumn47.Visible = true;
             this.GridColumn47.VisibleIndex = 7;
             // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "年龄";
+            this.gridColumn1.FieldName = "age";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 3;
+            // 
             // memoEdit1
             // 
             this.memoEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
@@ -3190,6 +3199,7 @@
             this.Button_PanelControl.Appearance.BorderColor = System.Drawing.Color.White;
             this.Button_PanelControl.Appearance.Options.UseBackColor = true;
             this.Button_PanelControl.Appearance.Options.UseBorderColor = true;
+            this.Button_PanelControl.Controls.Add(this.dzbs_simpleButton);
             this.Button_PanelControl.Controls.Add(this.doubleadvance_SimpleButton);
             this.Button_PanelControl.Controls.Add(this.image_ComboBoxEdit);
             this.Button_PanelControl.Controls.Add(this.SimpleButton6);
@@ -3467,13 +3477,17 @@
             this.GetPic_Timer.Interval = 1000;
             this.GetPic_Timer.Tick += new System.EventHandler(this.GetPic_Timer_Tick);
             // 
-            // gridColumn1
+            // dzbs_simpleButton
             // 
-            this.gridColumn1.Caption = "年龄";
-            this.gridColumn1.FieldName = "age";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 3;
+            this.dzbs_simpleButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dzbs_simpleButton.Location = new System.Drawing.Point(614, 9);
+            this.dzbs_simpleButton.LookAndFeel.SkinName = "Lilian";
+            this.dzbs_simpleButton.Name = "dzbs_simpleButton";
+            this.dzbs_simpleButton.Size = new System.Drawing.Size(60, 27);
+            this.dzbs_simpleButton.TabIndex = 30;
+            this.dzbs_simpleButton.Text = "电子病史";
+            this.dzbs_simpleButton.Visible = false;
+            this.dzbs_simpleButton.Click += new System.EventHandler(this.dzbs_simpleButton_Click);
             // 
             // Report_Form
             // 
@@ -3898,6 +3912,7 @@
         private TMKEASY.QualityControl.Report_UserControl report_UserControl1;
         internal DevExpress.XtraEditors.SimpleButton doubleadvance_SimpleButton;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        internal DevExpress.XtraEditors.SimpleButton dzbs_simpleButton;
 
 
     }

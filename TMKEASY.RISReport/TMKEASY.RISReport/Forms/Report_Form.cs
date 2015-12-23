@@ -709,7 +709,7 @@ namespace TMKEASY.RISReport
                     {
                         doubleadvance_SimpleButton.Enabled = true;
                     }
-                    else if ((Share_Class.User.HaveFunction("501") == true) )
+                    else if ((Share_Class.User.HaveFunction("501") == true))
                     {
                         doubleadvance_SimpleButton.Enabled = true;
                     }
@@ -788,6 +788,8 @@ namespace TMKEASY.RISReport
             //If Share_Class.SoftVersion = "0577002" ){
             //    d_buttonlist.Add(SimpleButton10)
             //Endif (
+
+            d_buttonlist.Add(dzbs_simpleButton);
             d_buttonlist.Add(Image_SimpleButton);
             d_buttonlist.Add(again_SimpleButton);
             d_buttonlist.Add(apply_SimpleButton);
@@ -803,6 +805,41 @@ namespace TMKEASY.RISReport
                 d_x = d_x + item.Width;
                 item.Visible = true;
             }
+
+        }
+
+        private void dzbs_simpleButton_Click(object sender, EventArgs e)
+        {
+            string EpisodeID = "";
+            string d_str = "select P_ADMNO from  HISEXAM where P_ACCESSNO ='" + CurReportForm.CurPatexam.accessno  + "'";
+            DataSet ds = RISOracle_Class.GetDS(d_str, d_str);
+            if (ds == null)
+                return;
+            if (ds.Tables.Count == 0)
+                return;
+            if (ds.Tables [0].Rows.Count ==0)
+                return ;
+            EpisodeID = ds.Tables[0].Rows[0][0].ToString();
+            string iePath = RisSetup_Class.GetINI("setup", "iepath");
+            string pacsstr = "";
+            string d_values = RisSetup_Class.GetINI("setup", "dzbsie");
+            if (d_values == "")
+                pacsstr = @"http://129.60.0.154/dthealth/web/csp/websys.csp?a=a&TMENU=53651";
+            pacsstr += "&EpisodeID=" + EpisodeID + "";
+
+            if (iePath != "")
+            {
+                System.Diagnostics.Process p = new System.Diagnostics.Process();
+                p.StartInfo.FileName = iePath;
+                p.StartInfo.Arguments = pacsstr;
+                p.Start();
+            }
+            else
+            {
+                System.Diagnostics.Process.Start(pacsstr);
+            }
+
+
 
         }
 
@@ -3266,6 +3303,7 @@ namespace TMKEASY.RISReport
             catch { }
 
         }
+
 
 
 
